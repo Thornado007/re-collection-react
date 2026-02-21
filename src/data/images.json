@@ -1,0 +1,74 @@
+[
+  {
+    "id": "file1",
+    "filename": "file1",
+    "artist": "Thor Vermin",
+    "filmType": "Black & White",
+    "year": "1948",
+    "scanningEquipment": "Epson V850",
+    "tags": [ "landscape", "mountains", "portrait" ]
+  },
+  {
+    "id": "file2",
+    "filename": "file2",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "1936",
+    "scanningEquipment": "Canon CanoScan",
+    "tags": [ "portrait", "documentary", "portrait" ]
+  },
+  {
+    "id": "file3",
+    "filename": "file3",
+    "artist": "Dorothea Lange",
+    "filmType": "Color",
+    "year": "1936",
+    "scanningequipment": "Canon CanoScan",
+    "tags": [ "portrait", "documentary" ]
+  },
+  {
+    "id": "file4",
+    "filename": "file4",
+    "artist": "Dorothea Lange",
+    "filmType": "Black & White",
+    "year": "1936",
+    "scanningEquipment": "Canon CanoScan",
+    "tags": [ "portrait", "documentary" ]
+  },
+  {
+    "id": "file5",
+    "filename": "file5",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2022",
+    "scanningEquipment": "Epson V850",
+    "tags": [ "street", "night" ]
+  },
+  {
+    "id": "file6",
+    "filename": "file6",
+    "artist": "Thor Vermin",
+    "filmType": "Black & White",
+    "year": "2023",
+    "scanningEquipment": "Camera Scanning",
+    "tags": [ "portrait" ]
+  },
+  {
+    "id": "file7",
+    "filename": "file7",
+    "artist": "Thor Vermin",
+    "filmType": "Black & White",
+    "year": "2023",
+    "scanningEquipment": "Camera Scanning",
+    "tags": [ "landscape" ]
+  },
+  {
+    "id": "file8",
+    "filename": "file8",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2024",
+    "scanningEquipment": "Epson V850",
+    "tags": [ "documentary", "portrait" ]
+  }
+]
