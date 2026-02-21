@@ -1,74 +1,218 @@
 [
   {
-    "id": "file1",
-    "filename": "file1",
+    "id": "202501_R1_OlympusMju1_FujiSuperia200_042-2",
+    "filename": "202501_R1_OlympusMju1_FujiSuperia200_042-2",
     "artist": "Thor Vermin",
     "filmType": "Black & White",
-    "year": "1948",
-    "scanningEquipment": "Epson V850",
-    "tags": [ "landscape", "mountains", "portrait" ]
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [ "cat", "shower", "bo" ]
   },
   {
-    "id": "file2",
-    "filename": "file2",
+    "id": "202501_R1_OlympusMju1_FujiSuperia200_043",
+    "filename": "202501_R1_OlympusMju1_FujiSuperia200_043",
     "artist": "Thor Vermin",
     "filmType": "Color",
-    "year": "1936",
+    "year": "2025",
     "scanningEquipment": "Canon CanoScan",
-    "tags": [ "portrait", "documentary", "portrait" ]
+    "tags": [ "shower" ]
   },
   {
-    "id": "file3",
-    "filename": "file3",
-    "artist": "Dorothea Lange",
+    "id": "202501_R2_OlympusMju1_KodakUltramax400_Coolscan5000_01",
+    "filename": "202501_R2_OlympusMju1_KodakUltramax400_Coolscan5000_01",
+    "artist": "Thor Vermin",
     "filmType": "Color",
     "year": "1936",
     "scanningequipment": "Canon CanoScan",
-    "tags": [ "portrait", "documentary" ]
+    "tags": [ "food", "soccer", "project" ]
   },
   {
-    "id": "file4",
-    "filename": "file4",
+    "id": "202501_R2_OlympusMju1_KodakUltramax400_Coolscan5000_33-2",
+    "filename": "202501_R2_OlympusMju1_KodakUltramax400_Coolscan5000_33-2",
     "artist": "Dorothea Lange",
     "filmType": "Black & White",
     "year": "1936",
     "scanningEquipment": "Canon CanoScan",
-    "tags": [ "portrait", "documentary" ]
+    "tags": [ "portrait", "self-portrait", "soccer", "project" ]
   },
   {
-    "id": "file5",
-    "filename": "file5",
+    "id": "202501_R3_OlympusMju1_Fuji200_Coolscan5000_03",
+    "filename": "202501_R3_OlympusMju1_Fuji200_Coolscan5000_03",
     "artist": "Thor Vermin",
     "filmType": "Color",
     "year": "2022",
     "scanningEquipment": "Epson V850",
-    "tags": [ "street", "night" ]
+    "tags": [ "portrait", "self-portrait", "mirror" ]
   },
   {
-    "id": "file6",
-    "filename": "file6",
+    "id": "202502_R1_NikonFE_KodakGold200_Coolscan5000_06-2",
+    "filename": "202502_R1_NikonFE_KodakGold200_Coolscan5000_06-2",
     "artist": "Thor Vermin",
     "filmType": "Black & White",
     "year": "2023",
     "scanningEquipment": "Camera Scanning",
-    "tags": [ "portrait" ]
+    "tags": [ "friends", "pub", "beer" ]
   },
   {
-    "id": "file7",
-    "filename": "file7",
-    "artist": "Thor Vermin",
-    "filmType": "Black & White",
-    "year": "2023",
-    "scanningEquipment": "Camera Scanning",
-    "tags": [ "landscape" ]
-  },
-  {
-    "id": "file8",
-    "filename": "file8",
+    "id": "202502_R1_NikonFE_KodakGold200_Coolscan5000_13",
+    "filename": "202502_R1_NikonFE_KodakGold200_Coolscan5000_13",
     "artist": "Thor Vermin",
     "filmType": "Color",
+    "year": "2023",
+    "scanningEquipment": "Camera Scanning",
+    "tags": [ "portrait", "self-portrait", "flower", "project" ]
+  },
+  {
+    "id": "202502_R1_NikonFE_KodakGold200_Coolscan5000_29-2",
+    "filename": "202502_R1_NikonFE_KodakGold200_Coolscan5000_29-2",
+    "artist": "Thor Vermin",
+    "filmType": "Black & White",
     "year": "2024",
     "scanningEquipment": "Epson V850",
-    "tags": [ "documentary", "portrait" ]
+    "tags": [ "christ", "damaged" ]
+  },
+  {
+    "id": "202502_R2_NikonFE_RolleiRetro80S_Coolscan5000_13",
+    "filename": "202502_R2_NikonFE_RolleiRetro80S_Coolscan5000_13",
+    "artist": "Thor Vermin",
+    "filmType": "Black & White",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [ "lamp", "project", "fire" ]
+  },
+  {
+    "id": "202502_R2_NikonFE_RolleiRetro80S_Coolscan5000_17",
+    "filename": "202502_R2_NikonFE_RolleiRetro80S_Coolscan5000_17",
+    "artist": "Thor Vermin",
+    "filmType": "Black & White",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [ "portrait", "self-portrait" ]
+  },
+  {
+    "id": "202502_R3_NikonFE_Portra400_Coolscan5000_18",
+    "filename": "202502_R3_NikonFE_Portra400_Coolscan5000_18",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [ "soccer", "project", "8", "cable" ]
+  },
+  {
+    "id": "202503_R1_NikonF2_FujiNPC160_Coolscan5000_09",
+    "filename": "202503_R1_NikonF2_FujiNPC160_Coolscan5000_09",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [ "portrait", "nan" ]
+  },
+  {
+    "id": "202503_R1_NikonF2_FujiNPC160_Coolscan5000_37-2",
+    "filename": "202503_R1_NikonF2_FujiNPC160_Coolscan5000_37-2",
+    "artist": "Thor Vermin",
+    "filmType": "Black & White",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [ "portrait", "nan", "train" ]
+  },
+  {
+    "id": "202503_R3_NikonF2__KodakGold200_Coolscan5000_27",
+    "filename": "202503_R3_NikonF2__KodakGold200_Coolscan5000_27",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [ "soccer", "project", "purple", "beerschot", "damaged" ]
+  },
+  {
+    "id": "202504_R1_NikonF2_FujiNPC160_1",
+    "filename": "202504_R1_NikonF2_FujiNPC160_1",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [ "flower", "project", "ercola" ]
+  },
+  {
+    "id": "202504_R1_NikonF2_FujiNPC160_2",
+    "filename": "202504_R1_NikonF2_FujiNPC160_2",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [ "ercola", "studio", "workshop" ]
+  },
+  {
+    "id": "202504_R1_NikonF2_FujiNPC160_3",
+    "filename": "202504_R1_NikonF2_FujiNPC160_3",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [ "ercola", "portrait", "mirror", "self-portrait" ]
+  },
+  {
+    "id": "202504_R1_NikonF2_FujiNPC160_4",
+    "filename": "202504_R1_NikonF2_FujiNPC160_4",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [ "ercola", "workspace", "chair" ]
+  },
+  {
+    "id": "202504_R1_NikonF2_FujiNPC160_8",
+    "filename": "202504_R1_NikonF2_FujiNPC160_8",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [ "ercola", "stairs" ]
+  },
+  {
+    "id": "202504_R1_NikonFM_FujiC200_Coolscan5000_01",
+    "filename": "202504_R1_NikonFM_FujiC200_Coolscan5000_01",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [ "flower", "project", "garden" ]
+  },
+  {
+    "id": "202504_R1_NikonFM_FujiC200_Coolscan5000_10",
+    "filename": "202504_R1_NikonFM_FujiC200_Coolscan5000_10",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [ "table", "circle", "pub", "beer", "summer" ]
+  },
+  {
+    "id": "202504_R2_NikonFM_KodakGold200_Coolscan5000_07",
+    "filename": "202504_R2_NikonFM_KodakGold200_Coolscan5000_07",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [ "portrait", "katinka", "cat", "cece" ]
+  },
+  {
+    "id": "202505_R1_NikonFM_Gold200_Coolscan5000_23",
+    "filename": "202505_R1_NikonFM_Gold200_Coolscan5000_23",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [ "lamp", "project", "ceiling" ]
+  },
+  {
+    "id": "202505_R1_NikonFM_KodakUltramax400_03",
+    "filename": "202505_R1_NikonFM_KodakUltramax400_03",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [ "flower", "project" ]
   }
 ]
