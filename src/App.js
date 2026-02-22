@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import imageData from "./data/images.json";
 import BLOG_POSTS from "./posts";
+import About from "./About";
 
 /* ─────────────────────────────────────────────
    DATA
@@ -121,7 +122,7 @@ function Thumb({ tone, ratio, src, alt }) {
 }
 
 /* ─────────────────────────────────────────────
-   LIGHTBOX — with mobile-friendly close + sizing
+   LIGHTBOX — bigger, stable height, tags
 ───────────────────────────────────────────── */
 
 function Lightbox({ items, index, onClose, setIndex }) {
@@ -144,6 +145,10 @@ function Lightbox({ items, index, onClose, setIndex }) {
         ["Film", img.film],
         ["Scanner", img.scanner],
         ["Author", img.author],
+        Array.isArray(img.tags) && img.tags.length > 0 && [
+            "Tags",
+            img.tags.join(", ")
+        ],
         img.collectionTitle && ["Collection", img.collectionTitle]
     ].filter(Boolean);
 
@@ -159,49 +164,51 @@ function Lightbox({ items, index, onClose, setIndex }) {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "flex-start",
-                padding: "24px 16px 80px"
+                padding: "40px 16px 80px"
             }}
         >
+            {/* Close button pinned to viewport, not over the image */}
+            <button className="lb-close-btn" onClick={onClose}>
+                Close ✕
+            </button>
+
             <div
                 onClick={e => e.stopPropagation()}
-                style={{ width: "100%", maxWidth: "720px", position: "relative" }}
+                style={{ width: "100%", maxWidth: "1024px", position: "relative" }}
             >
-                {/* Close button */}
-                <button
-                    className="lb-close-btn"
-                    onClick={onClose}
-                >
-                    Close ✕
-                </button>
-
-                {/* Image */}
+                {/* Image area: fixed min-height so layout doesn't jump */}
                 <div
                     style={{
                         width: "100%",
-                        display: "flex",
-                        justifyContent: "center",
-                        marginBottom: "16px",
-                        marginTop: "24px"
+                        marginTop: "16px",
+                        marginBottom: "20px"
                     }}
                 >
-                    {img.src ? (
-                        <img
-                            src={img.src}
-                            alt={img.name}
-                            className="lb-img"
-                        />
-                    ) : (
-                        <div
-                            style={{
-                                height: "min(80vh, 70vw)",
-                                width: "auto",
-                                background:
-                                    { dark: "#1a1a1a", mid: "#808080", light: "#c8c8c8" }[
-                                    img.tone
-                                    ] || "#999"
-                            }}
-                        />
-                    )}
+                    <div
+                        style={{
+                            width: "100%",
+                            minHeight: "80vh",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center"
+                        }}
+                    >
+                        {img.src ? (
+                            <img src={img.src} alt={img.name} className="lb-img" />
+                        ) : (
+                            <div
+                                style={{
+                                    width: "auto",
+                                    height: "80vh",
+                                    background:
+                                        { dark: "#1a1a1a", mid: "#808080", light: "#c8c8c8" }[
+                                        img.tone
+                                        ] || "#999",
+                                    aspectRatio: "3/2"
+                                }}
+                            />
+                        )}
+                    </div>
                 </div>
 
                 {/* Prev / Next */}
@@ -347,9 +354,7 @@ function Dropdown({ label, options, value, onChange }) {
                 }}
             >
                 {display}
-                <span
-                    style={{ fontSize: "0.5rem", opacity: 0.5, marginTop: "1px" }}
-                >
+                <span style={{ fontSize: "0.5rem", opacity: 0.5, marginTop: "1px" }}>
                     {open ? "▲" : "▼"}
                 </span>
             </button>
@@ -404,7 +409,7 @@ function Dropdown({ label, options, value, onChange }) {
 }
 
 /* ─────────────────────────────────────────────
-   MULTI-DROPDOWN (for Authors, Tags)
+   MULTI-DROPDOWN (Authors, Tags) with columns
 ───────────────────────────────────────────── */
 
 function MultiDropdown({ label, options, values, onChange }) {
@@ -457,9 +462,7 @@ function MultiDropdown({ label, options, values, onChange }) {
                 }}
             >
                 {display}
-                <span
-                    style={{ fontSize: "0.5rem", opacity: 0.5, marginTop: "1px" }}
-                >
+                <span style={{ fontSize: "0.5rem", opacity: 0.5, marginTop: "1px" }}>
                     {open ? "▲" : "▼"}
                 </span>
             </button>
@@ -474,7 +477,8 @@ function MultiDropdown({ label, options, values, onChange }) {
                         background: "white",
                         border: "1.5px solid var(--border)",
                         borderRadius: "12px",
-                        minWidth: "180px",
+                        minWidth: "260px",
+                        maxWidth: "480px",
                         boxShadow: "0 8px 24px rgba(0,0,0,0.1)",
                         overflow: "hidden"
                     }}
@@ -496,46 +500,65 @@ function MultiDropdown({ label, options, values, onChange }) {
                         All
                     </div>
 
-                    {/* Options */}
-                    {options
-                        .filter(opt => opt !== "All")
-                        .map(opt => {
-                            const checked = values.includes(opt);
-                            return (
-                                <div
-                                    key={opt}
-                                    onClick={() => toggleValue(opt)}
-                                    style={{
-                                        padding: "8px 16px",
-                                        fontFamily: "var(--sans)",
-                                        fontSize: "0.78rem",
-                                        cursor: "pointer",
-                                        display: "flex",
-                                        alignItems: "center",
-                                        gap: "8px",
-                                        background: "white",
-                                        color: "#555"
-                                    }}
-                                    onMouseEnter={e =>
-                                        (e.currentTarget.style.background = "#f8f8f8")
-                                    }
-                                    onMouseLeave={e =>
-                                        (e.currentTarget.style.background = "white")
-                                    }
-                                >
-                                    <span
+                    {/* Options in a grid with scroll */}
+                    <div
+                        style={{
+                            maxHeight: "260px",
+                            overflowY: "auto",
+                            padding: "4px 0 6px",
+                            display: "grid",
+                            gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))",
+                            columnGap: "4px"
+                        }}
+                    >
+                        {options
+                            .filter(opt => opt !== "All")
+                            .map(opt => {
+                                const checked = values.includes(opt);
+                                return (
+                                    <div
+                                        key={opt}
+                                        onClick={() => toggleValue(opt)}
                                         style={{
-                                            width: "12px",
-                                            height: "12px",
-                                            borderRadius: "3px",
-                                            border: "1px solid #ccc",
-                                            background: checked ? "#111" : "white"
+                                            padding: "6px 12px",
+                                            fontFamily: "var(--sans)",
+                                            fontSize: "0.78rem",
+                                            cursor: "pointer",
+                                            display: "flex",
+                                            alignItems: "center",
+                                            gap: "8px",
+                                            background: "white",
+                                            color: "#555"
                                         }}
-                                    />
-                                    <span>{opt}</span>
-                                </div>
-                            );
-                        })}
+                                        onMouseEnter={e =>
+                                            (e.currentTarget.style.background = "#f8f8f8")
+                                        }
+                                        onMouseLeave={e =>
+                                            (e.currentTarget.style.background = "white")
+                                        }
+                                    >
+                                        <span
+                                            style={{
+                                                width: "12px",
+                                                height: "12px",
+                                                borderRadius: "3px",
+                                                border: "1px solid #ccc",
+                                                background: checked ? "#111" : "white"
+                                            }}
+                                        />
+                                        <span
+                                            style={{
+                                                overflow: "hidden",
+                                                textOverflow: "ellipsis",
+                                                whiteSpace: "nowrap"
+                                            }}
+                                        >
+                                            {opt}
+                                        </span>
+                                    </div>
+                                );
+                            })}
+                    </div>
                 </div>
             )}
         </div>
@@ -555,7 +578,7 @@ export default function App() {
     const [fFilm, setFFilm] = useState("All");
     const [fScanner, setFScanner] = useState("All");
     const [fAuthors, setFAuthors] = useState([]); // multi-select
-    const [fTags, setFTags] = useState([]);       // multi-select
+    const [fTags, setFTags] = useState([]); // multi-select
     const [search, setSearch] = useState("");
     const [viewMode, setViewMode] = useState("grid");
 
@@ -604,17 +627,30 @@ export default function App() {
         fTags.length > 0 ||
         search;
 
-    const filtered = ALL_ARCHIVE.filter(img =>
-        (fYear === "All" || img.year === fYear) &&
-        (fFilm === "All" || img.film === fFilm) &&
-        (fScanner === "All" || img.scanner === fScanner) &&
-        (fAuthors.length === 0 || fAuthors.includes(img.author)) &&
-        (fTags.length === 0 ||
-            (img.tags || []).some(tag => fTags.includes(tag))) &&
-        (!search ||
-            img.name.toLowerCase().includes(search.toLowerCase()) ||
-            img.year.includes(search))
-    );
+    // Updated search: checks title, year, film, scanner, author, tags
+    const filtered = ALL_ARCHIVE.filter(img => {
+        const matchesFilters =
+            (fYear === "All" || img.year === fYear) &&
+            (fFilm === "All" || img.film === fFilm) &&
+            (fScanner === "All" || img.scanner === fScanner) &&
+            (fAuthors.length === 0 || fAuthors.includes(img.author)) &&
+            (fTags.length === 0 ||
+                (img.tags || []).some(tag => fTags.includes(tag)));
+
+        if (!matchesFilters) return false;
+
+        if (!search) return true;
+
+        const q = search.toLowerCase();
+        return (
+            (img.name && img.name.toLowerCase().includes(q)) ||
+            (img.year && String(img.year).toLowerCase().includes(q)) ||
+            (img.film && img.film.toLowerCase().includes(q)) ||
+            (img.scanner && img.scanner.toLowerCase().includes(q)) ||
+            (img.author && img.author.toLowerCase().includes(q)) ||
+            (img.tags || []).some(tag => tag.toLowerCase().includes(q))
+        );
+    });
 
     const navTo = name => {
         setPage({ name });
@@ -664,8 +700,8 @@ export default function App() {
         .list-row    { display: grid; grid-template-columns: 48px 1fr 64px 130px 160px 110px; min-height: 48px; }
         .list-header { display: grid; grid-template-columns: 48px 1fr 64px 130px 160px 110px; }
         @media (max-width: 720px) {
-          .list-row    { grid-template-columns: 48px 1fr 60px; }
-          .list-header { grid-template-columns: 48px 1fr 60px; }
+          .list-row    { gridTemplateColumns: 48px 1fr 60px; }
+          .list-header { gridTemplateColumns: 48px 1fr 60px; }
           .list-hide   { display: none !important; }
         }
         @media (max-width: 420px) {
@@ -675,7 +711,7 @@ export default function App() {
           .list-year   { display: none !important; }
         }
 
-        /* Lightbox image sizing */
+        /* Lightbox image sizing: big but stable height for all orientations */
         .lb-img {
           display: block;
           max-width: 100%;
@@ -683,20 +719,14 @@ export default function App() {
           width: auto;
           height: auto;
         }
-        @media (max-width: 600px) {
-          .lb-img {
-            width: 100%;
-            height: auto;
-            max-height: none;
-          }
-        }
 
-        /* Lightbox close button */
+        /* Lightbox close button pinned to viewport */
         .lb-close-btn {
-          position: absolute;
-          top: 8px;
-          right: 8px;
-          background: rgba(0,0,0,0.65);
+          position: fixed;
+          top: 16px;
+          right: 16px;
+          z-index: 2100;
+          background: rgba(0,0,0,0.75);
           color: white;
           border: none;
           border-radius: 999px;
@@ -707,7 +737,7 @@ export default function App() {
           cursor: pointer;
         }
         .lb-close-btn:hover {
-          background: rgba(0,0,0,0.85);
+          background: rgba(0,0,0,0.9);
         }
       `}</style>
 
@@ -745,7 +775,8 @@ export default function App() {
                     {[
                         ["home", "Home"],
                         ["archive", "Archive"],
-                        ["blog", "Notes"]
+                        ["blog", "Notes"],
+                        ["about", "About"]
                     ].map(([n, l]) => (
                         <button
                             key={n}
@@ -804,7 +835,8 @@ export default function App() {
                     {[
                         ["home", "Home"],
                         ["archive", "Archive"],
-                        ["blog", "Notes"]
+                        ["blog", "Notes"],
+                        ["about", "About"]
                     ].map(([n, l]) => (
                         <button
                             key={n}
@@ -853,6 +885,7 @@ export default function App() {
                     />
                 )}
                 {page.name === "blog" && <Blog setPage={setPage} />}
+                {page.name === "about" && <About />}
                 {page.name === "collection" && (
                     <CollectionDetail
                         col={page.data}
@@ -970,11 +1003,12 @@ function Home({ setPage }) {
 
             <div className="col-grid" style={{ marginBottom: "56px" }}>
                 {COLLECTIONS.map((col, i) => {
-                    const count = ALL_ARCHIVE.filter(img =>
-                        (!col.filters.year || img.year === col.filters.year) &&
-                        (!col.filters.author || img.author === col.filters.author) &&
-                        (!col.filters.film || img.film === col.filters.film) &&
-                        (!col.filters.tag || (img.tags || []).includes(col.filters.tag))
+                    const count = ALL_ARCHIVE.filter(
+                        img =>
+                            (!col.filters.year || img.year === col.filters.year) &&
+                            (!col.filters.author || img.author === col.filters.author) &&
+                            (!col.filters.film || img.film === col.filters.film) &&
+                            (!col.filters.tag || (img.tags || []).includes(col.filters.tag))
                     ).length;
 
                     return (
@@ -1037,7 +1071,7 @@ function Home({ setPage }) {
 }
 
 /* ─────────────────────────────────────────────
-   COLLECTION THUMBNAIL (uses archive imageIds)
+   COLLECTION THUMBNAIL
 ───────────────────────────────────────────── */
 
 function CollectionThumb({ col, index, onClick }) {
@@ -1523,8 +1557,8 @@ function Archive({
                             marginTop: "5px"
                         }}
                     >
-                        Showing {visibleItems.length} of {filtered.length} matching
-                        images · {ALL_ARCHIVE.length} total
+                        Showing {visibleItems.length} of {filtered.length} matching images ·{" "}
+                        {ALL_ARCHIVE.length} total
                     </p>
                 </div>
                 <div
@@ -1576,7 +1610,7 @@ function Archive({
                 <span style={{ color: "var(--gray)", fontSize: "0.9rem" }}>⌕</span>
                 <input
                     type="text"
-                    placeholder="Search by title or year…"
+                    placeholder="Search title, year, film, scanner, author, or tags…"
                     value={search}
                     onChange={e => setSearch(e.target.value)}
                     style={{
