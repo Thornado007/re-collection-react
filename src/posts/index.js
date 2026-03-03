@@ -1,7 +1,7 @@
 import cameraScanning from "./everything-camera-scanning";
 import movedByEggleston from "./moved-by-eggleston";
+import gregGirardComparison from "./greg-girard-comparison";
 
-// Order: newest first if you like
-const BLOG_POSTS = [movedByEggleston, cameraScanning];
+const BLOG_POSTS = [gregGirardComparison, movedByEggleston, cameraScanning];
 
 export default BLOG_POSTS;
