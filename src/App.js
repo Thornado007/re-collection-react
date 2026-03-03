@@ -1,4 +1,10 @@
-import { useState, useRef, useEffect } from "react";
+import {
+    useState,
+    useRef,
+    useEffect,
+    useMemo,
+    useDeferredValue
+} from "react";
 import imageData from "./data/images.json";
 import BLOG_POSTS from "./posts";
 import About from "./About";
@@ -56,16 +62,18 @@ const EXTRA = imageData.map(p => ({
     tags: p.tags || [],
     ratio: "3/2",
     tone: "mid",
-    // Actual file path: uses the full id as the filename
+    // Big image (keep for lightbox and single image views)
     src: `/images/${p.id}.jpg`,
+    // NEW: Thumb for archive grid/list (much smaller)
+    thumbSrc: `/images/thumbs/${p.id}.jpg`,
     collection: null,
     collectionTitle: null
 }));
 
 const ALL_ARCHIVE = EXTRA;
 
-// Pagination size for Archive "Load more"
-const PAGE_SIZE = 45;
+// Pagination size for Archive "Load more" (smaller first load)
+const PAGE_SIZE = 18;
 
 const uniq = k => [
     "All",
@@ -201,9 +209,11 @@ function Lightbox({ items, index, onClose, setIndex }) {
                                     width: "auto",
                                     height: "80vh",
                                     background:
-                                        { dark: "#1a1a1a", mid: "#808080", light: "#c8c8c8" }[
-                                        img.tone
-                                        ] || "#999",
+                                        {
+                                            dark: "#1a1a1a",
+                                            mid: "#808080",
+                                            light: "#c8c8c8"
+                                        }[img.tone] || "#999",
                                     aspectRatio: "3/2"
                                 }}
                             />
@@ -582,6 +592,8 @@ export default function App() {
     const [search, setSearch] = useState("");
     const [viewMode, setViewMode] = useState("grid");
 
+    const deferredSearch = useDeferredValue(search);
+
     const openLb = (items, i) => setLb({ items, index: i });
     const closeLb = () => setLb(null);
 
@@ -627,30 +639,32 @@ export default function App() {
         fTags.length > 0 ||
         search;
 
-    // Updated search: checks title, year, film, scanner, author, tags
-    const filtered = ALL_ARCHIVE.filter(img => {
-        const matchesFilters =
-            (fYear === "All" || img.year === fYear) &&
-            (fFilm === "All" || img.film === fFilm) &&
-            (fScanner === "All" || img.scanner === fScanner) &&
-            (fAuthors.length === 0 || fAuthors.includes(img.author)) &&
-            (fTags.length === 0 ||
-                (img.tags || []).some(tag => fTags.includes(tag)));
+    // Memoized filter for better performance at 1000+ images
+    const filtered = useMemo(() => {
+        const q = (deferredSearch || "").trim().toLowerCase();
 
-        if (!matchesFilters) return false;
+        return ALL_ARCHIVE.filter(img => {
+            const matchesFilters =
+                (fYear === "All" || img.year === fYear) &&
+                (fFilm === "All" || img.film === fFilm) &&
+                (fScanner === "All" || img.scanner === fScanner) &&
+                (fAuthors.length === 0 || fAuthors.includes(img.author)) &&
+                (fTags.length === 0 ||
+                    (img.tags || []).some(tag => fTags.includes(tag)));
 
-        if (!search) return true;
+            if (!matchesFilters) return false;
+            if (!q) return true;
 
-        const q = search.toLowerCase();
-        return (
-            (img.name && img.name.toLowerCase().includes(q)) ||
-            (img.year && String(img.year).toLowerCase().includes(q)) ||
-            (img.film && img.film.toLowerCase().includes(q)) ||
-            (img.scanner && img.scanner.toLowerCase().includes(q)) ||
-            (img.author && img.author.toLowerCase().includes(q)) ||
-            (img.tags || []).some(tag => tag.toLowerCase().includes(q))
-        );
-    });
+            return (
+                (img.name && img.name.toLowerCase().includes(q)) ||
+                (img.year && String(img.year).toLowerCase().includes(q)) ||
+                (img.film && img.film.toLowerCase().includes(q)) ||
+                (img.scanner && img.scanner.toLowerCase().includes(q)) ||
+                (img.author && img.author.toLowerCase().includes(q)) ||
+                (img.tags || []).some(tag => tag.toLowerCase().includes(q))
+            );
+        });
+    }, [fYear, fFilm, fScanner, fAuthors, fTags, deferredSearch]);
 
     const navTo = name => {
         setPage({ name });
@@ -696,6 +710,12 @@ export default function App() {
         .archive-grid { columns: 3; column-gap: 10px; }
         @media (max-width: 800px) { .archive-grid { columns: 2; } }
         @media (max-width: 400px) { .archive-grid { columns: 1; } }
+
+        /* Performance: skip rendering offscreen tiles */
+        .archive-grid > div {
+          content-visibility: auto;
+          contain-intrinsic-size: 320px 320px;
+        }
 
         .list-row    { display: grid; grid-template-columns: 48px 1fr 64px 130px 160px 110px; min-height: 48px; }
         .list-header { display: grid; grid-template-columns: 48px 1fr 64px 130px 160px 110px; }
@@ -1084,7 +1104,9 @@ function CollectionThumb({ col, index, onClick }) {
     const coverImage = coverImageId
         ? ALL_ARCHIVE.find(img => img.id === coverImageId)
         : null;
-    const coverSrc = coverImage?.src;
+
+    // Use thumb for cover when available (faster home page)
+    const coverSrc = coverImage?.thumbSrc || coverImage?.src;
 
     return (
         <div
@@ -1113,6 +1135,8 @@ function CollectionThumb({ col, index, onClick }) {
                         transform: hov ? "scale(1.03)" : "scale(1)",
                         transition: "transform 0.5s ease"
                     }}
+                    loading="lazy"
+                    decoding="async"
                 />
             ) : (
                 <div
@@ -1333,6 +1357,8 @@ function CollectionDetail({ col, setPage, openLb, goToArchiveWithPreset }) {
                                     width: "auto",
                                     display: "block"
                                 }}
+                                loading="lazy"
+                                decoding="async"
                             />
                         ) : (
                             <div
@@ -1340,9 +1366,11 @@ function CollectionDetail({ col, setPage, openLb, goToArchiveWithPreset }) {
                                     height: "min(60vh, 45vw)",
                                     width: "auto",
                                     background:
-                                        { dark: "#1a1a1a", mid: "#808080", light: "#c8c8c8" }[
-                                        current.tone
-                                        ] || "#999"
+                                        {
+                                            dark: "#1a1a1a",
+                                            mid: "#808080",
+                                            light: "#c8c8c8"
+                                        }[current.tone] || "#999"
                                 }}
                             />
                         )}
@@ -1389,11 +1417,7 @@ function CollectionDetail({ col, setPage, openLb, goToArchiveWithPreset }) {
                         </div>
                     </div>
 
-                    <div
-                        style={{
-                            marginBottom: "28px"
-                        }}
-                    >
+                    <div style={{ marginBottom: "28px" }}>
                         <span style={{ fontSize: "0.9rem", fontWeight: 600 }}>
                             {current.name}
                         </span>
@@ -1401,11 +1425,7 @@ function CollectionDetail({ col, setPage, openLb, goToArchiveWithPreset }) {
                 </>
             )}
 
-            <div
-                style={{
-                    marginBottom: "28px"
-                }}
-            >
+            <div style={{ marginBottom: "28px" }}>
                 {col.body.split("\n\n").map((p, i) => (
                     <p
                         key={i}
@@ -1436,13 +1456,7 @@ function CollectionDetail({ col, setPage, openLb, goToArchiveWithPreset }) {
                 }}
             >
                 <div>
-                    <p
-                        style={{
-                            fontSize: "0.95rem",
-                            fontWeight: 600,
-                            marginBottom: "3px"
-                        }}
-                    >
+                    <p style={{ fontSize: "0.95rem", fontWeight: 600, marginBottom: "3px" }}>
                         Browse all images in this collection
                     </p>
                 </div>
@@ -1650,12 +1664,7 @@ function Archive({
                     marginBottom: "28px"
                 }}
             >
-                <Dropdown
-                    label="Year"
-                    options={YEARS}
-                    value={fYear}
-                    onChange={setFYear}
-                />
+                <Dropdown label="Year" options={YEARS} value={fYear} onChange={setFYear} />
                 <Dropdown
                     label="Film Stock"
                     options={FILMS}
@@ -1675,12 +1684,7 @@ function Archive({
                     values={fAuthors}
                     onChange={setFAuthors}
                 />
-                <MultiDropdown
-                    label="Tag"
-                    options={TAGS}
-                    values={fTags}
-                    onChange={setFTags}
-                />
+                <MultiDropdown label="Tag" options={TAGS} values={fTags} onChange={setFTags} />
 
                 {hasFilters && (
                     <button
@@ -1721,13 +1725,7 @@ function Archive({
             )}
 
             {visibleCount < filtered.length && (
-                <div
-                    style={{
-                        marginTop: "24px",
-                        display: "flex",
-                        justifyContent: "center"
-                    }}
-                >
+                <div style={{ marginTop: "24px", display: "flex", justifyContent: "center" }}>
                     <button
                         onClick={() =>
                             setVisibleCount(c => Math.min(c + PAGE_SIZE, filtered.length))
@@ -1780,7 +1778,7 @@ function GridView({ items, openLb }) {
                     <Thumb
                         tone={img.tone}
                         ratio={img.ratio || "3/4"}
-                        src={img.src}
+                        src={img.thumbSrc || img.src}
                         alt={img.name}
                     />
                     <div
@@ -1798,9 +1796,7 @@ function GridView({ items, openLb }) {
                             padding: "12px"
                         }}
                     >
-                        <div
-                            style={{ fontSize: "0.8rem", fontWeight: 600, color: "white" }}
-                        >
+                        <div style={{ fontSize: "0.8rem", fontWeight: 600, color: "white" }}>
                             {img.name}
                         </div>
                     </div>
@@ -1817,24 +1813,22 @@ function ListView({ items, openLb }) {
                 className="list-header"
                 style={{ borderBottom: "1.5px solid var(--black)", paddingBottom: "8px" }}
             >
-                {["", "Title", "Year", "Film Stock", "Scanner", "Author"].map(
-                    (h, i) => (
-                        <div
-                            key={i}
-                            className={i > 2 ? "list-hide" : ""}
-                            style={{
-                                fontFamily: "var(--mono)",
-                                fontSize: "0.5rem",
-                                letterSpacing: "0.14em",
-                                textTransform: "uppercase",
-                                color: "var(--gray)",
-                                padding: "0 8px"
-                            }}
-                        >
-                            {h}
-                        </div>
-                    )
-                )}
+                {["", "Title", "Year", "Film Stock", "Scanner", "Author"].map((h, i) => (
+                    <div
+                        key={i}
+                        className={i > 2 ? "list-hide" : ""}
+                        style={{
+                            fontFamily: "var(--mono)",
+                            fontSize: "0.5rem",
+                            letterSpacing: "0.14em",
+                            textTransform: "uppercase",
+                            color: "var(--gray)",
+                            padding: "0 8px"
+                        }}
+                    >
+                        {h}
+                    </div>
+                ))}
             </div>
 
             {items.map((img, i) => (
@@ -1849,21 +1843,12 @@ function ListView({ items, openLb }) {
                         animation: `fin 0.25s ease ${i * 0.015}s both`
                     }}
                     onMouseEnter={e => (e.currentTarget.style.background = "var(--off)")}
-                    onMouseLeave={e =>
-                        (e.currentTarget.style.background = "transparent")
-                    }
+                    onMouseLeave={e => (e.currentTarget.style.background = "transparent")}
                 >
-                    <div
-                        style={{
-                            width: "48px",
-                            height: "48px",
-                            overflow: "hidden",
-                            flexShrink: 0
-                        }}
-                    >
+                    <div style={{ width: "48px", height: "48px", overflow: "hidden", flexShrink: 0 }}>
                         {img.src ? (
                             <img
-                                src={img.src}
+                                src={img.thumbSrc || img.src}
                                 alt={img.name}
                                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
                                 loading="lazy"
@@ -1882,6 +1867,7 @@ function ListView({ items, openLb }) {
                             />
                         )}
                     </div>
+
                     <div
                         style={{
                             fontSize: "0.85rem",
@@ -1893,6 +1879,7 @@ function ListView({ items, openLb }) {
                     >
                         {img.name}
                     </div>
+
                     <div
                         className="list-year"
                         style={{
@@ -1906,6 +1893,7 @@ function ListView({ items, openLb }) {
                     >
                         {img.year}
                     </div>
+
                     <div
                         className="list-hide"
                         style={{
@@ -1919,6 +1907,7 @@ function ListView({ items, openLb }) {
                     >
                         {img.film}
                     </div>
+
                     <div
                         className="list-hide"
                         style={{
@@ -1932,6 +1921,7 @@ function ListView({ items, openLb }) {
                     >
                         {img.scanner}
                     </div>
+
                     <div
                         className="list-hide"
                         style={{
@@ -1966,13 +1956,7 @@ function Blog({ setPage }) {
             }}
         >
             <div style={{ marginBottom: "32px" }}>
-                <p
-                    style={{
-                        fontSize: "0.78rem",
-                        color: "var(--gray)",
-                        marginBottom: "8px"
-                    }}
-                >
+                <p style={{ fontSize: "0.78rem", color: "var(--gray)", marginBottom: "8px" }}>
                     Writing
                 </p>
                 <h1
@@ -1996,6 +1980,7 @@ function Blog({ setPage }) {
                     On analog photography, archival practice, and the life of images.
                 </p>
             </div>
+
             <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                 {BLOG_POSTS.map(p => (
                     <article
@@ -2028,13 +2013,7 @@ function Blog({ setPage }) {
                             />
                         </div>
                         <div style={{ padding: "18px 20px" }}>
-                            <p
-                                style={{
-                                    fontSize: "0.62rem",
-                                    color: "var(--gray)",
-                                    marginBottom: "6px"
-                                }}
-                            >
+                            <p style={{ fontSize: "0.62rem", color: "var(--gray)", marginBottom: "6px" }}>
                                 {p.date} · {p.category}
                             </p>
                             <h2
@@ -2089,13 +2068,7 @@ function PostDetail({ post, setPage, openLb }) {
             }}
         >
             <BackBtn onClick={() => setPage({ name: "blog" })}>← Notes</BackBtn>
-            <p
-                style={{
-                    fontSize: "0.65rem",
-                    color: "var(--gray)",
-                    marginBottom: "10px"
-                }}
-            >
+            <p style={{ fontSize: "0.65rem", color: "var(--gray)", marginBottom: "10px" }}>
                 {post.date} · {post.category}
             </p>
             <h1
@@ -2111,14 +2084,7 @@ function PostDetail({ post, setPage, openLb }) {
             </h1>
 
             {postImages.length > 0 && (
-                <div
-                    style={{
-                        display: "flex",
-                        gap: "8px",
-                        marginBottom: "24px",
-                        overflowX: "auto"
-                    }}
-                >
+                <div style={{ display: "flex", gap: "8px", marginBottom: "24px", overflowX: "auto" }}>
                     {postImages.map((img, idx) => (
                         <div
                             key={img.id}
@@ -2128,16 +2094,10 @@ function PostDetail({ post, setPage, openLb }) {
                             <Thumb
                                 tone={img.tone}
                                 ratio={img.ratio || "3/4"}
-                                src={img.src}
+                                src={img.thumbSrc || img.src}
                                 alt={img.name}
                             />
-                            <div
-                                style={{
-                                    fontSize: "0.7rem",
-                                    marginTop: "4px",
-                                    color: "var(--gray)"
-                                }}
-                            >
+                            <div style={{ fontSize: "0.7rem", marginTop: "4px", color: "var(--gray)" }}>
                                 {img.name}
                             </div>
                         </div>
@@ -2198,15 +2158,11 @@ function renderPostBodyWithImages(body, openLb) {
                             cursor: "pointer"
                         }}
                         onClick={() => openLb([item], 0)}
+                        loading="lazy"
+                        decoding="async"
                     />
                     {alt && (
-                        <div
-                            style={{
-                                fontSize: "0.8rem",
-                                color: "var(--gray)",
-                                marginTop: "4px"
-                            }}
-                        >
+                        <div style={{ fontSize: "0.8rem", color: "var(--gray)", marginTop: "4px" }}>
                             {alt}
                         </div>
                     )}
