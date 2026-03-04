@@ -492,7 +492,7 @@
     "filmType": "Black & White",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "piano", "interior", "portrait", "window-light" ]
+    "tags": [ "interior", "portrait", "juliet" ]
   },
   {
     "id": "202402_R2_OLsuperzoom_KodakGold200-1",
@@ -510,7 +510,7 @@
     "filmType": "Color",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "portrait", "warm-light", "hood", "close-up" ]
+    "tags": [ "portrait", "warm-light", "selfportrait", "close-up", "mirror" ]
   },
   {
     "id": "202402_R2_OLsuperzoom_KodakGold200-35",
@@ -519,7 +519,7 @@
     "filmType": "Color",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "soccer", "stadium", "night", "sports" ]
+    "tags": [ "soccer", "stadium", "night", "sports", "project" ]
   },
   {
     "id": "202403_R1_OLMiniSuper_KodakGold200-13-2",
@@ -528,7 +528,7 @@
     "filmType": "Black & White",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "living-room", "chair", "resting", "interior" ]
+    "tags": [ "living-room", "chair", "resting", "interior", "katinka" ]
   },
   {
     "id": "202403_R2_MinoltaX300_KodakGold200-7-2",
@@ -537,7 +537,7 @@
     "filmType": "Black & White",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "bathroom", "mirror", "portrait", "long-hair" ]
+    "tags": [ "bathroom", "long-hair", "bath" ]
   },
   {
     "id": "202403_R2_MinoltaX300_KodakGold200-13",
@@ -564,7 +564,7 @@
     "filmType": "Black & White",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "doorway", "house", "portrait", "exterior" ]
+    "tags": [ "doorway", "house", "portrait", "exterior", "katinka" ]
   },
   {
     "id": "202404_R1_MinoltaX300_KodakGold200-11-2",
@@ -573,7 +573,7 @@
     "filmType": "Black & White",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "portrait", "t-shirt", "outdoor" ]
+    "tags": [ "portrait", "t-shirt", "outdoor", "katinka" ]
   },
   {
     "id": "202404_R1_MinoltaX300_KodakGold200-15-2",
@@ -582,7 +582,7 @@
     "filmType": "Color",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "table", "cards", "hands", "game" ]
+    "tags": [ "table", "cards", "hands", "game", "katinka" ]
   },
   {
     "id": "202405_R1_OLSuperzoom_KodakGold200_CSD810_15",
@@ -591,7 +591,7 @@
     "filmType": "Color",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "camera", "night", "flash", "smoke" ]
+    "tags": [ "concert", "club", "red", "lights", "night", "filming", "portrait", "cigarette", "smoking" ]
   },
   {
     "id": "202405_R1_OLSuperzoom_KodakGold200_CSD810_27-2",
@@ -600,7 +600,7 @@
     "filmType": "Black & White",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "concert", "crowd", "music" ]
+    "tags": [ "concert", "crowd", "music", "spike", "chloë" ]
   },
   {
     "id": "202406_R1_MinoltaX300_KodakGold_CSD810_36",
@@ -609,7 +609,7 @@
     "filmType": "Color",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "sunflower", "garden", "summer", "plants" ]
+    "tags": [ "sunflower", "garden", "summer", "plants", "flowers", "project" ]
   },
   {
     "id": "202409_R2_MinoltaX300_KodakGold200005-2",
@@ -627,7 +627,7 @@
     "filmType": "Color",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "pink-chairs", "concrete", "street", "detail" ]
+    "tags": [ "chairs", "concrete", "street", "detail", "soccer", "project", "cola" ]
   },
   {
     "id": "202409_R2_MinoltaX300_KodakGold200030",
@@ -645,7 +645,7 @@
     "filmType": "Black & White",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "portrait", "night", "flash", "dark" ]
+    "tags": [ "portrait", "night", "flash", "dark", "red" ]
   },
   {
     "id": "202409_R3_PentaxPC35AFM_KodakUltramax40064_",
@@ -654,7 +654,7 @@
     "filmType": "Color",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "concert", "club", "red", "lights", "night" ]
+    "tags": [ "concert", "club", "red", "lights", "night", "filming", "portrait" ]
   },
   {
     "id": "202409_R3_PentaxPC35AFM_KodakUltramax400067_-2",
@@ -663,7 +663,7 @@
     "filmType": "Black & White",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "hand", "arm", "close-up", "shadow", "night" ]
+    "tags": [ "hand", "arm", "close-up", "shadow", "night", "music", "band", "punk", "concert" ]
   },
   {
     "id": "202409_R4_MinoltaX300_KodakUltramax400_Coolscan5000_03-2",
@@ -672,7 +672,7 @@
     "filmType": "Black & White",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "wall", "hanging", "plant", "tape", "abstract" ]
+    "tags": [ "wall", "hanging", "plant", "tape", "flowers", "project" ]
   },
   {
     "id": "202409_R4_MinoltaX300_KodakUltramax400_Coolscan5000_31",
@@ -681,7 +681,7 @@
     "filmType": "Color",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "still-life", "figurine", "ceramic", "table", "orange" ]
+    "tags": [ "still-life", "apple", "ceramic", "table", "orange" ]
   },
   {
     "id": "202409_R4_MinoltaX300_KodakUltramax400_Coolscan5000_35-2",
@@ -690,7 +690,7 @@
     "filmType": "Black & White",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "portrait", "outdoors", "coat", "wind" ]
+    "tags": [ "portrait", "outdoors", "coat", "wind", "light", "sun" ]
   },
   {
     "id": "202409_R4_MinoltaX300_KodakUltramax400_Coolscan5000_37",
@@ -699,7 +699,7 @@
     "filmType": "Color",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "lamp", "interior", "table", "warm-light", "night" ]
+    "tags": [ "lamp", "interior", "table", "warm-light", "night", "project" ]
   },
   {
     "id": "202410_R1_MinoltaX300_KodakUltramax400_Coolscan5000_8-2",
@@ -708,7 +708,7 @@
     "filmType": "Black & White",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "interior", "bathroom", "mirror", "towel" ]
+    "tags": [ "interior", "bathroom", "mirror", "towel", "portrait", "self portrait" ]
   },
   {
     "id": "202410_R1_MinoltaX300_KodakUltramax400_Coolscan5000_19-2",
@@ -717,7 +717,7 @@
     "filmType": "Black & White",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "portrait", "self-portrait", "interior", "doorway" ]
+    "tags": [ "interior", "room", "katinka" ]
   },
   {
     "id": "202410_R1_MinoltaX300_KodakUltramax400_Coolscan5000_23-2",
@@ -744,7 +744,7 @@
     "filmType": "Color",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "cat", "reflection", "outdoors", "table" ]
+    "tags": [ "reflection", "bo", "cat", "self portrait", "mirror" ]
   },
   {
     "id": "202410_R1_MinoltaX300_KodakUltramax400_Coolscan5000_31",
@@ -762,7 +762,7 @@
     "filmType": "Color",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "abstract", "reflection", "glass", "hands", "water" ]
+    "tags": [ "reflection", "bo", "cat", "self portrait", "mirror" ]
   },
   {
     "id": "202410_R2_MinoltaX300_KodakGold200_Coolscan5000_01",
@@ -771,7 +771,7 @@
     "filmType": "Color",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "lamp", "interior", "table", "warm-light", "night" ]
+    "tags": [ "lamp", "interior", "table", "warm-light", "night", "project" ]
   },
   {
     "id": "202410_R2_MinoltaX300_KodakGold200_Coolscan5000_11-Edit",
@@ -780,7 +780,7 @@
     "filmType": "Color",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "portrait", "woman", "green", "jacket", "studio" ]
+    "tags": [ "portrait", "woman", "green", "jacket", "fee" ]
   },
   {
     "id": "202410_R2_MinoltaX300_KodakGold200_Coolscan5000_14",
@@ -789,7 +789,7 @@
     "filmType": "Color",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "portrait", "man", "curly-hair", "studio" ]
+    "tags": [ "portrait", "man", "curly-hair" ]
   },
   {
     "id": "202410_R2_MinoltaX300_KodakGold200_Coolscan5000_18-2",
@@ -807,7 +807,7 @@
     "filmType": "Black & White",
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "portrait", "woman", "cigarette", "interior", "wood-panel" ]
+    "tags": [ "portrait", "woman", "halloween", "interior", "wood-panel" ]
   },
   {
     "id": "202410_R2_MinoltaX300_KodakGold200_Coolscan5000_23-3",
@@ -818,11 +818,10 @@
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
       "table",
-      "men",
-      "sitting",
-      "at",
-      "drinks",
-      "two"
+      "dries",
+      "halloween",
+      "portrait",
+      "vampire"
     ]
   },
   {
@@ -834,10 +833,9 @@
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
       "cat",
-      "standing",
-      "surface",
-      "black",
-      "white"
+      "bo",
+      "tail",
+      "playing"
     ]
   },
   {
@@ -852,7 +850,7 @@
       "cat",
       "tv",
       "laying",
-      "background"
+      "cece"
     ]
   },
   {
@@ -866,7 +864,8 @@
       "vase",
       "candle",
       "table",
-      "flowers"
+      "flowers",
+      "project"
     ]
   },
   {
@@ -879,7 +878,8 @@
     "tags": [
       "chair",
       "sitting",
-      "cat"
+      "cat",
+      "cece"
     ]
   },
   {
@@ -890,11 +890,11 @@
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "cat",
-      "dark",
-      "woman",
+      "katinka",
       "standing",
-      "room"
+      "room",
+      "orange",
+      "evening"
     ]
   },
   {
@@ -905,11 +905,9 @@
     "year": "2024",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "taking",
-      "is",
-      "themselves",
-      "person",
-      "picture"
+      "portrait",
+      "self portrait",
+      "mirror"
     ]
   },
   {
@@ -922,8 +920,9 @@
     "tags": [
       "table",
       "grass",
-      "chairs",
-      "shed"
+      "shed",
+      "farm",
+      "grass"
     ]
   },
   {
@@ -935,11 +934,9 @@
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
       "table",
-      "s",
-      "close",
-      "feet",
-      "person",
-      "up"
+      "chairs",
+      "low",
+      "floor"
     ]
   },
   {
@@ -951,9 +948,10 @@
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
       "vase",
-      "it",
       "window",
-      "flowers"
+      "flowers",
+      "project"
+
     ]
   },
   {
@@ -967,8 +965,7 @@
       "tree",
       "standing",
       "man",
-      "yard",
-      "next"
+      "garden",
     ]
   },
   {
@@ -980,10 +977,11 @@
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
       "floor",
-      "standing",
       "cat",
       "wooden",
-      "room"
+      "room",
+      "cece",
+      "sun"
     ]
   },
   {
@@ -994,10 +992,9 @@
     "year": "2022",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "body",
-      "it",
       "water",
-      "reed"
+      "reed",
+      "plants"
     ]
   },
   {
@@ -1009,8 +1006,6 @@
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
       "table",
-      "background",
-      "blurry",
       "glass"
     ]
   },
@@ -1025,7 +1020,8 @@
       "kneeling",
       "down",
       "man",
-      "woods"
+      "woods",
+      "jogging"
     ]
   },
   {
@@ -1036,10 +1032,11 @@
     "year": "2022",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "black",
-      "white",
-      "photo",
-      "river"
+      "river",
+      "water",
+      "lake",
+      "forrest",
+      "tree"
     ]
   },
   {
@@ -1064,10 +1061,10 @@
     "year": "2022",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "ledge",
       "food",
-      "sitting",
-      "bowl"
+      "bowl",
+      "eggs",
+      "trash"
     ]
   },
   {
@@ -1078,12 +1075,8 @@
     "year": "2022",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "for",
-      "shirt",
-      "camera",
-      "posing",
-      "white",
-      "man"
+      "self portrait",
+      "portrait"
     ]
   },
   {
@@ -1094,11 +1087,8 @@
     "year": "2022",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "their",
       "glass",
       "hand",
-      "person",
-      "ball",
       "holding"
     ]
   },
@@ -1110,11 +1100,10 @@
     "year": "2022",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "it",
-      "knife",
       "person",
       "plate",
-      "holding"
+      "holding",
+      "hand"
     ]
   },
   {
@@ -1125,11 +1114,10 @@
     "year": "2022",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "standing",
-      "sidewalk",
-      "is",
       "cat",
-      "person"
+      "cece",
+      "perspective",
+      "leg"
     ]
   },
   {
@@ -1140,11 +1128,8 @@
     "year": "2022",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "sitting",
-      "his",
-      "man",
-      "ground",
-      "cell"
+      "soccer",
+      "michel"
     ]
   },
   {
@@ -1156,11 +1141,9 @@
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
       "table",
-      "sitting",
-      "outside",
-      "at",
-      "man",
-      "is"
+      "drinks",
+      "hand",
+      "summer"
     ]
   },
   {
@@ -1171,10 +1154,9 @@
     "year": "2022",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "cell",
-      "woman",
-      "sidewalk",
-      "sitting"
+      "sitting",
+      "portrait",
+      "summer"
     ]
   },
   {
@@ -1186,10 +1168,9 @@
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
       "table",
-      "woman",
-      "sitting",
-      "at",
-      "drink"
+      "drinks",
+      "hand",
+      "summer"
     ]
   },
   {
@@ -1201,8 +1182,9 @@
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
       "bouquet",
-      "woman",
-      "holding"
+      "katinka",
+      "flowers",
+      "pictures"
     ]
   },
   {
@@ -1213,11 +1195,11 @@
     "year": "2022",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "black",
-      "girl",
       "dress",
       "beach",
-      "young"
+      "wind",
+      "movement",
+      "katinka"
     ]
   },
   {
@@ -1229,9 +1211,9 @@
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
       "beach",
-      "woman",
       "blanket",
-      "laying"
+      "laying",
+      "sand"
     ]
   },
   {
@@ -1243,11 +1225,10 @@
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
       "table",
-      "woman",
-      "sitting",
-      "at",
       "glass",
-      "wine"
+      "wine",
+      "hanna",
+      "portrait"
     ]
   },
   {
@@ -1261,8 +1242,8 @@
       "path",
       "field",
       "yellow",
-      "background",
-      "flowers"
+      "flowers",
+      "project"
     ]
   },
   {
@@ -1275,9 +1256,10 @@
     "tags": [
       "shade",
       "standing",
-      "dog",
-      "is",
-      "small"
+      "sheep",
+      "small",
+      "farm",
+      "garden"
     ]
   },
   {
@@ -1292,7 +1274,7 @@
       "hot",
       "man",
       "pool",
-      "drink"
+      "summer"
     ]
   },
   {
@@ -1317,10 +1299,8 @@
     "year": "2022",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "black",
-      "white",
-      "photo",
-      "garden"
+      "garden",
+      "window"
     ]
   },
   {
@@ -1333,9 +1313,9 @@
     "tags": [
       "woman",
       "sitting",
-      "her",
-      "cell",
-      "grass"
+      "grass",
+      "katinka",
+      "leg"
     ]
   },
   {
@@ -1347,9 +1327,9 @@
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
       "sitting",
-      "woman",
       "man",
-      "ground"
+      "ground",
+      "summer"
     ]
   },
   {
@@ -1360,10 +1340,10 @@
     "year": "2022",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "sitting",
-      "bench",
-      "man",
-      "city"
+      "bar",
+      "sun",
+      "summer",
+      "smoking"
     ]
   },
   {
@@ -1374,11 +1354,12 @@
     "year": "2022",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "group",
       "table",
-      "sitting",
-      "at",
-      "people"
+      "beer",
+      "bar",
+      "drinks",
+      "summer",
+      "sun"
     ]
   },
   {
@@ -1390,11 +1371,10 @@
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
       "table",
-      "woman",
-      "standing",
-      "net",
-      "tennis",
-      "next"
+      "garden",
+      "katinka",
+      "pip",
+      "tabletennis"
     ]
   },
   {
@@ -1407,7 +1387,9 @@
     "tags": [
       "feet",
       "two",
-      "water"
+      "water",
+      "summer",
+      "sun"
     ]
   },
   {
@@ -1435,7 +1417,8 @@
       "rim",
       "bowl",
       "white",
-      "sink"
+      "sink",
+      "bathroom"
     ]
   },
   {
@@ -1446,12 +1429,11 @@
     "year": "2022",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "pair",
-      "his",
-      "scissors",
       "hand",
-      "man",
-      "holding"
+      "spaghetti",
+      "steam",
+      "cooking",
+      "food"
     ]
   },
   {
@@ -1462,10 +1444,10 @@
     "year": "2022",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "selfie",
-      "woman",
-      "taking",
-      "self"
+      "portrait",
+      "self portrait",
+      "mirror",
+      "bathroom"
     ]
   },
   {
@@ -1476,12 +1458,11 @@
     "year": "2022",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "down",
       "hair",
       "street",
-      "woman",
-      "long",
-      "walking"
+      "walking",
+      "movement",
+      "katinka"
     ]
   },
   {
@@ -1492,11 +1473,9 @@
     "year": "2022",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "white",
       "trees",
-      "photo",
-      "black",
-      "sky"
+      "sky",
+      "dark"
     ]
   },
   {
@@ -1507,7 +1486,6 @@
     "year": "2022",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "are",
       "yard",
       "chairs",
       "table",
@@ -1523,9 +1501,8 @@
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
       "house",
-      "white",
-      "photo",
-      "black"
+      "door",
+      "garden"
     ]
   },
   {
@@ -1536,7 +1513,6 @@
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "mirror",
       "room",
       "rug",
       "plant"
@@ -1550,9 +1526,10 @@
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "it",
-      "pictures",
-      "wall"
+      "lamp",
+      "project",
+      "bar",
+      "posters"
     ]
   },
   {
@@ -1563,10 +1540,10 @@
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "beard",
-      "man",
-      "white",
-      "shirt"
+      "leg",
+      "knee",
+      "blood",
+      "injury"
     ]
   },
   {
@@ -1579,10 +1556,8 @@
     "tags": [
       "sitting",
       "ground",
-      "feet",
-      "man",
-      "up",
-      "his"
+      "soccer",
+      "t-shirt"
     ]
   },
   {
@@ -1593,10 +1568,7 @@
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "under",
-      "bench",
       "sunny",
-      "an",
       "wooden",
       "day"
     ]
@@ -1609,12 +1581,10 @@
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "is",
       "mirror",
-      "looking",
-      "man",
-      "his",
-      "reflection"
+      "reflection",
+      "tattoo",
+      "body"
     ]
   },
   {
@@ -1625,10 +1595,10 @@
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "picture",
-      "taking",
-      "man",
-      "himself"
+      "self portrait",
+      "portrait",
+      "mirror",
+      "camera"
     ]
   },
   {
@@ -1639,9 +1609,9 @@
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "brown",
-      "hair",
-      "woman"
+      "katinka",
+      "portrait",
+      "train"
     ]
   },
   {
@@ -1654,8 +1624,8 @@
     "tags": [
       "field",
       "standing",
-      "cell",
-      "woman"
+      "katinka",
+      "grass"
     ]
   },
   {
@@ -1667,11 +1637,11 @@
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
       "tiny",
-      "their",
       "insect",
       "hand",
       "person",
-      "holding"
+      "holding",
+      "grasshopper"
     ]
   },
   {
@@ -1684,10 +1654,8 @@
     "tags": [
       "forest",
       "hair",
-      "front",
-      "woman",
-      "standing",
-      "long"
+      "katinka",
+      "tree"
     ]
   },
   {
@@ -1698,10 +1666,10 @@
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "cell",
-      "phone",
-      "talking",
-      "woman"
+      "katinka",
+      "portrait",
+      "light",
+      "tree"
     ]
   },
   {
@@ -1712,12 +1680,10 @@
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "reaching",
-      "bush",
-      "for",
-      "person",
       "piece",
-      "fruit"
+      "fruit",
+      "berry",
+      "hand"
     ]
   },
   {
@@ -1728,12 +1694,8 @@
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "under",
-      "bench",
-      "white",
-      "photo",
-      "black",
-      "tree"
+      "tree",
+      "light"
     ]
   },
   {
@@ -1747,7 +1709,7 @@
       "grass",
       "blanket",
       "laying",
-      "woman"
+      "katinka"
     ]
   },
   {
@@ -1758,10 +1720,9 @@
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "laptop",
       "bed",
       "laying",
-      "woman"
+      "katinka"
     ]
   },
   {
@@ -1772,11 +1733,10 @@
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "cell",
-      "man",
-      "shirt",
-      "no",
-      "holding"
+      "self portrait",
+      "mirror",
+      "light",
+      "arm"
     ]
   },
   {
@@ -1788,7 +1748,6 @@
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
       "camera",
-      "small",
       "background",
       "lens"
     ]
@@ -1801,9 +1760,6 @@
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "amount",
-      "dirty",
-      "small",
       "sink",
       "water"
     ]
@@ -1816,10 +1772,10 @@
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "bicycle",
-      "white",
-      "photo",
-      "black"
+      "light",
+      "bread",
+      "bike",
+      "bag"
     ]
   },
   {
@@ -1830,11 +1786,10 @@
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "white",
-      "photo",
+      "light",
+      "bread",
       "bike",
-      "black",
-      "person"
+      "bag"
     ]
   },
   {
@@ -1847,7 +1802,8 @@
     "tags": [
       "window",
       "room",
-      "bed"
+      "bed",
+      "bedroom"
     ]
   },
   {
@@ -1858,10 +1814,10 @@
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "dog",
-      "standing",
+      "sheep",
       "tree",
-      "shade"
+      "shade",
+      "light"
     ]
   },
   {
@@ -1874,7 +1830,8 @@
     "tags": [
       "table",
       "white",
-      "grass"
+      "reflection",
+      "light"
     ]
   },
   {
@@ -1885,11 +1842,8 @@
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
-      "picture",
-      "kitchen",
-      "taking",
-      "herself",
-      "woman"
+      "self portrait",
+      "kitchen", "portrait", "mirror"
     ]
   }
 ]
