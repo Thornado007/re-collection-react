@@ -5,55 +5,22 @@ import {
     useMemo,
     useDeferredValue
 } from "react";
+
 import imageData from "./data/images.json";
+import COLLECTIONS from "./data/collections";
 import BLOG_POSTS from "./posts";
 import About from "./About";
+
+import { presetToUiState, imageMatchesUiFilters } from "./lib/archiveFilters";
+import { readArchiveStateFromUrl, buildUrlSearch } from "./lib/archiveUrl";
 
 /* ─────────────────────────────────────────────
    DATA
 ───────────────────────────────────────────── */
 
-// Featured collections as presets over the archive
-const COLLECTIONS = [
-    {
-        id: "Thor Vermin Portraits",
-        title: "Thor Vermin: A Collection of Portraits",
-        coverTone: "dark",
-        coverRatio: "3/2",
-        description: "A small collection of recent portraits",
-        body:
-            "These negatives sat in a folder marked only with a year. It took time to understand that the year was the subject.\n\nBy 1948, Adams had already refined his way of looking — but something in these frames still feels experimental, as if the landscape is testing him back.",
-        filters: {
-            author: "Thor Vermin",
-            tags: ["portrait"]
-        },
-        imageIds: [
-            "202502_R1_NikonFE_KodakGold200_Coolscan5000_13",
-            "202503_R1_NikonF2_FujiNPC160_Coolscan5000_09",
-            "202504_R2_NikonFM_KodakGold200_Coolscan5000_07"
-        ]
-    },
-    {
-        id: "Vermin Flowers",
-        title: "Thor Vermin: A collection of Flowers",
-        coverTone: "mid",
-        coverRatio: "3/2",
-        description: "Dorothea Lange's work from 1936 — a year that defined her.",
-        body:
-            "1936 is the year Lange’s images entered the public imagination. The pictures here orbit the edges of that history — familiar gestures in unfamiliar frames.\n\nI am interested in the way her attention settles: hands, fabric, the lines of a face that has been looking back for a long time.",
-        filters: { author: "Thor Vermin", tag: "flower" },
-        imageIds: [
-            "202505_R1_NikonFM_KodakUltramax400_03",
-            "202504_R1_NikonFM_FujiC200_Coolscan5000_01",
-            "202504_R1_NikonFM_FujiC200_Coolscan5000_01"
-        ]
-    }
-];
-
 // Map images.json into archive items
 const EXTRA = imageData.map(p => ({
     id: p.id,
-    // Short label shown in UI (e.g. "202501")
     name: p.filename,
     year: String(p.year),
     film: p.filmType,
@@ -62,9 +29,7 @@ const EXTRA = imageData.map(p => ({
     tags: p.tags || [],
     ratio: "3/2",
     tone: "mid",
-    // Big image (keep for lightbox and single image views)
     src: `/images/${p.id}.jpg`,
-    // NEW: Thumb for archive grid/list (much smaller)
     thumbSrc: `/images/thumbs/${p.id}.jpg`,
     collection: null,
     collectionTitle: null
@@ -72,7 +37,7 @@ const EXTRA = imageData.map(p => ({
 
 const ALL_ARCHIVE = EXTRA;
 
-// Pagination size for Archive "Load more" (smaller first load)
+// Pagination size for Archive "Load more"
 const PAGE_SIZE = 18;
 
 const uniq = k => [
@@ -130,7 +95,7 @@ function Thumb({ tone, ratio, src, alt }) {
 }
 
 /* ─────────────────────────────────────────────
-   LIGHTBOX — bigger, stable height, tags
+   LIGHTBOX
 ───────────────────────────────────────────── */
 
 function Lightbox({ items, index, onClose, setIndex }) {
@@ -153,10 +118,7 @@ function Lightbox({ items, index, onClose, setIndex }) {
         ["Film", img.film],
         ["Scanner", img.scanner],
         ["Author", img.author],
-        Array.isArray(img.tags) && img.tags.length > 0 && [
-            "Tags",
-            img.tags.join(", ")
-        ],
+        Array.isArray(img.tags) && img.tags.length > 0 && ["Tags", img.tags.join(", ")],
         img.collectionTitle && ["Collection", img.collectionTitle]
     ].filter(Boolean);
 
@@ -175,7 +137,6 @@ function Lightbox({ items, index, onClose, setIndex }) {
                 padding: "40px 16px 80px"
             }}
         >
-            {/* Close button pinned to viewport, not over the image */}
             <button className="lb-close-btn" onClick={onClose}>
                 Close ✕
             </button>
@@ -184,14 +145,7 @@ function Lightbox({ items, index, onClose, setIndex }) {
                 onClick={e => e.stopPropagation()}
                 style={{ width: "100%", maxWidth: "1024px", position: "relative" }}
             >
-                {/* Image area: fixed min-height so layout doesn't jump */}
-                <div
-                    style={{
-                        width: "100%",
-                        marginTop: "16px",
-                        marginBottom: "20px"
-                    }}
-                >
+                <div style={{ width: "100%", marginTop: "16px", marginBottom: "20px" }}>
                     <div
                         style={{
                             width: "100%",
@@ -209,11 +163,9 @@ function Lightbox({ items, index, onClose, setIndex }) {
                                     width: "auto",
                                     height: "80vh",
                                     background:
-                                        {
-                                            dark: "#1a1a1a",
-                                            mid: "#808080",
-                                            light: "#c8c8c8"
-                                        }[img.tone] || "#999",
+                                        { dark: "#1a1a1a", mid: "#808080", light: "#c8c8c8" }[
+                                        img.tone
+                                        ] || "#999",
                                     aspectRatio: "3/2"
                                 }}
                             />
@@ -221,7 +173,6 @@ function Lightbox({ items, index, onClose, setIndex }) {
                     </div>
                 </div>
 
-                {/* Prev / Next */}
                 <div style={{ display: "flex", gap: "8px", marginBottom: "20px" }}>
                     <button
                         onClick={() => setIndex(i => i - 1)}
@@ -265,7 +216,6 @@ function Lightbox({ items, index, onClose, setIndex }) {
                     </button>
                 </div>
 
-                {/* Title */}
                 <h2
                     style={{
                         fontFamily: "var(--sans)",
@@ -280,7 +230,6 @@ function Lightbox({ items, index, onClose, setIndex }) {
                     {img.name}
                 </h2>
 
-                {/* Metadata */}
                 {meta.length > 0 && (
                     <div
                         style={{
@@ -323,7 +272,7 @@ function Lightbox({ items, index, onClose, setIndex }) {
 }
 
 /* ─────────────────────────────────────────────
-   DROPDOWN (single-select)
+   DROPDOWN
 ───────────────────────────────────────────── */
 
 function Dropdown({ label, options, value, onChange }) {
@@ -368,6 +317,7 @@ function Dropdown({ label, options, value, onChange }) {
                     {open ? "▲" : "▼"}
                 </span>
             </button>
+
             {open && (
                 <div
                     style={{
@@ -419,7 +369,7 @@ function Dropdown({ label, options, value, onChange }) {
 }
 
 /* ─────────────────────────────────────────────
-   MULTI-DROPDOWN (Authors, Tags) with columns
+   MULTI-DROPDOWN
 ───────────────────────────────────────────── */
 
 function MultiDropdown({ label, options, values, onChange }) {
@@ -442,11 +392,8 @@ function MultiDropdown({ label, options, values, onChange }) {
     else if (values.length > 2) display = `${values.length} selected`;
 
     const toggleValue = val => {
-        if (values.includes(val)) {
-            onChange(values.filter(v => v !== val));
-        } else {
-            onChange([...values, val]);
-        }
+        if (values.includes(val)) onChange(values.filter(v => v !== val));
+        else onChange([...values, val]);
     };
 
     return (
@@ -493,7 +440,6 @@ function MultiDropdown({ label, options, values, onChange }) {
                         overflow: "hidden"
                     }}
                 >
-                    {/* All */}
                     <div
                         onClick={() => onChange([])}
                         style={{
@@ -510,7 +456,6 @@ function MultiDropdown({ label, options, values, onChange }) {
                         All
                     </div>
 
-                    {/* Options in a grid with scroll */}
                     <div
                         style={{
                             maxHeight: "260px",
@@ -587,39 +532,112 @@ export default function App() {
     const [fYear, setFYear] = useState("All");
     const [fFilm, setFFilm] = useState("All");
     const [fScanner, setFScanner] = useState("All");
-    const [fAuthors, setFAuthors] = useState([]); // multi-select
-    const [fTags, setFTags] = useState([]); // multi-select
+    const [fAuthors, setFAuthors] = useState([]);
+    const [fTags, setFTags] = useState([]);
     const [search, setSearch] = useState("");
     const [viewMode, setViewMode] = useState("grid");
 
     const deferredSearch = useDeferredValue(search);
 
+    const didInitUrlRef = useRef(false);
+
     const openLb = (items, i) => setLb({ items, index: i });
     const closeLb = () => setLb(null);
 
-    const goToArchiveWithPreset = preset => {
-        setFYear(preset?.year || "All");
-        setFFilm(preset?.film || "All");
-        setFScanner(preset?.scanner || "All");
+    // Read URL on load + on back/forward
+    useEffect(() => {
+        const applyFromUrl = () => {
+            const s = readArchiveStateFromUrl(window.location.search);
 
-        if (Array.isArray(preset?.authors)) {
-            setFAuthors(preset.authors);
-        } else if (preset?.author) {
-            setFAuthors([preset.author]);
-        } else {
-            setFAuthors([]);
+            const allowed = new Set(["home", "archive", "blog", "about"]);
+            const nextPage = allowed.has(s.page) ? s.page : "home";
+
+            setPage({ name: nextPage });
+
+            if (nextPage === "archive") {
+                setFYear(s.year);
+                setFFilm(s.film);
+                setFScanner(s.scanner);
+                setFAuthors(s.authors);
+                setFTags(s.tags);
+                setSearch(s.q);
+                setViewMode(s.view);
+            }
+
+            didInitUrlRef.current = true;
+        };
+
+        applyFromUrl();
+        window.addEventListener("popstate", applyFromUrl);
+        return () => window.removeEventListener("popstate", applyFromUrl);
+    }, []);
+
+    // Keep URL in sync (shareable links)
+    useEffect(() => {
+        if (!didInitUrlRef.current) return;
+
+        if (!["home", "archive", "blog", "about"].includes(page.name)) return;
+
+        const searchStr = buildUrlSearch({
+            page: page.name,
+            year: fYear,
+            film: fFilm,
+            scanner: fScanner,
+            authors: fAuthors,
+            tags: fTags,
+            q: search,
+            view: viewMode
+        });
+
+        const newUrl = window.location.pathname + searchStr;
+        const curUrl = window.location.pathname + window.location.search;
+
+        if (newUrl !== curUrl) window.history.replaceState(null, "", newUrl);
+    }, [page.name, fYear, fFilm, fScanner, fAuthors, fTags, search, viewMode]);
+
+    const navTo = name => {
+        setPage({ name });
+        setMenuOpen(false);
+
+        if (["home", "archive", "blog", "about"].includes(name)) {
+            const searchStr = buildUrlSearch({
+                page: name,
+                year: fYear,
+                film: fFilm,
+                scanner: fScanner,
+                authors: fAuthors,
+                tags: fTags,
+                q: search,
+                view: viewMode
+            });
+            window.history.pushState(null, "", window.location.pathname + searchStr);
         }
+    };
 
-        if (Array.isArray(preset?.tags)) {
-            setFTags(preset.tags);
-        } else if (preset?.tag) {
-            setFTags([preset.tag]);
-        } else {
-            setFTags([]);
-        }
+    const goToArchiveWithPreset = presetRaw => {
+        const ui = presetToUiState(presetRaw);
 
+        setFYear(ui.year);
+        setFFilm(ui.film);
+        setFScanner(ui.scanner);
+        setFAuthors(ui.authors);
+        setFTags(ui.tags);
         setSearch("");
         setPage({ name: "archive" });
+        setMenuOpen(false);
+
+        const searchStr = buildUrlSearch({
+            page: "archive",
+            year: ui.year,
+            film: ui.film,
+            scanner: ui.scanner,
+            authors: ui.authors,
+            tags: ui.tags,
+            q: "",
+            view: viewMode
+        });
+
+        window.history.pushState(null, "", window.location.pathname + searchStr);
     };
 
     const clearFilters = () => {
@@ -639,20 +657,19 @@ export default function App() {
         fTags.length > 0 ||
         search;
 
-    // Memoized filter for better performance at 1000+ images
+    // Shared filter logic (Tags = AND)
     const filtered = useMemo(() => {
         const q = (deferredSearch || "").trim().toLowerCase();
 
         return ALL_ARCHIVE.filter(img => {
-            const matchesFilters =
-                (fYear === "All" || img.year === fYear) &&
-                (fFilm === "All" || img.film === fFilm) &&
-                (fScanner === "All" || img.scanner === fScanner) &&
-                (fAuthors.length === 0 || fAuthors.includes(img.author)) &&
-                (fTags.length === 0 ||
-                    (img.tags || []).some(tag => fTags.includes(tag)));
-
-            if (!matchesFilters) return false;
+            const ok = imageMatchesUiFilters(img, {
+                year: fYear,
+                film: fFilm,
+                scanner: fScanner,
+                authors: fAuthors,
+                tags: fTags
+            });
+            if (!ok) return false;
             if (!q) return true;
 
             return (
@@ -665,11 +682,6 @@ export default function App() {
             );
         });
     }, [fYear, fFilm, fScanner, fAuthors, fTags, deferredSearch]);
-
-    const navTo = name => {
-        setPage({ name });
-        setMenuOpen(false);
-    };
 
     return (
         <>
@@ -711,7 +723,6 @@ export default function App() {
         @media (max-width: 800px) { .archive-grid { columns: 2; } }
         @media (max-width: 400px) { .archive-grid { columns: 1; } }
 
-        /* Performance: skip rendering offscreen tiles */
         .archive-grid > div {
           content-visibility: auto;
           contain-intrinsic-size: 320px 320px;
@@ -720,8 +731,8 @@ export default function App() {
         .list-row    { display: grid; grid-template-columns: 48px 1fr 64px 130px 160px 110px; min-height: 48px; }
         .list-header { display: grid; grid-template-columns: 48px 1fr 64px 130px 160px 110px; }
         @media (max-width: 720px) {
-          .list-row    { gridTemplateColumns: 48px 1fr 60px; }
-          .list-header { gridTemplateColumns: 48px 1fr 60px; }
+          .list-row    { grid-template-columns: 48px 1fr 60px; }
+          .list-header { grid-template-columns: 48px 1fr 60px; }
           .list-hide   { display: none !important; }
         }
         @media (max-width: 420px) {
@@ -731,7 +742,6 @@ export default function App() {
           .list-year   { display: none !important; }
         }
 
-        /* Lightbox image sizing: big but stable height for all orientations */
         .lb-img {
           display: block;
           max-width: 100%;
@@ -740,7 +750,6 @@ export default function App() {
           height: auto;
         }
 
-        /* Lightbox close button pinned to viewport */
         .lb-close-btn {
           position: fixed;
           top: 16px;
@@ -756,9 +765,7 @@ export default function App() {
           font-weight: 500;
           cursor: pointer;
         }
-        .lb-close-btn:hover {
-          background: rgba(0,0,0,0.9);
-        }
+        .lb-close-btn:hover { background: rgba(0,0,0,0.9); }
       `}</style>
 
             {/* NAV */}
@@ -791,6 +798,7 @@ export default function App() {
                 >
                     Re—collection
                 </div>
+
                 <div className="desktop-nav" style={{ gap: "4px" }}>
                     {[
                         ["home", "Home"],
@@ -818,6 +826,7 @@ export default function App() {
                         </button>
                     ))}
                 </div>
+
                 <button
                     className="mobile-menu-btn"
                     onClick={() => setMenuOpen(o => !o)}
@@ -881,7 +890,7 @@ export default function App() {
             )}
 
             <main style={{ paddingTop: "60px", minHeight: "100vh" }}>
-                {page.name === "home" && <Home setPage={setPage} />}
+                {page.name === "home" && <Home navTo={navTo} setPage={setPage} />}
                 {page.name === "archive" && (
                     <Archive
                         filtered={filtered}
@@ -937,7 +946,7 @@ export default function App() {
    HOME
 ───────────────────────────────────────────── */
 
-function Home({ setPage }) {
+function Home({ navTo, setPage }) {
     return (
         <div
             style={{
@@ -947,7 +956,6 @@ function Home({ setPage }) {
                 animation: "up 0.4s ease"
             }}
         >
-            {/* Intro */}
             <div style={{ marginBottom: "52px" }}>
                 <p
                     style={{
@@ -986,7 +994,6 @@ function Home({ setPage }) {
                 </p>
             </div>
 
-            {/* Featured Collections */}
             <div
                 style={{
                     display: "flex",
@@ -995,17 +1002,11 @@ function Home({ setPage }) {
                     marginBottom: "16px"
                 }}
             >
-                <span
-                    style={{
-                        fontSize: "0.78rem",
-                        fontWeight: 600,
-                        color: "var(--black)"
-                    }}
-                >
+                <span style={{ fontSize: "0.78rem", fontWeight: 600, color: "var(--black)" }}>
                     Collections
                 </span>
                 <button
-                    onClick={() => setPage({ name: "archive" })}
+                    onClick={() => navTo("archive")}
                     style={{
                         fontFamily: "var(--sans)",
                         fontSize: "0.72rem",
@@ -1023,13 +1024,10 @@ function Home({ setPage }) {
 
             <div className="col-grid" style={{ marginBottom: "56px" }}>
                 {COLLECTIONS.map((col, i) => {
-                    const count = ALL_ARCHIVE.filter(
-                        img =>
-                            (!col.filters.year || img.year === col.filters.year) &&
-                            (!col.filters.author || img.author === col.filters.author) &&
-                            (!col.filters.film || img.film === col.filters.film) &&
-                            (!col.filters.tag || (img.tags || []).includes(col.filters.tag))
-                    ).length;
+                    // SAME logic as archive (shared matcher)
+                    const ui = presetToUiState(col.filters);
+                    const count = ALL_ARCHIVE.filter(img => imageMatchesUiFilters(img, ui))
+                        .length;
 
                     return (
                         <CollectionThumb
@@ -1042,7 +1040,6 @@ function Home({ setPage }) {
                 })}
             </div>
 
-            {/* Recent Notes */}
             <div
                 style={{
                     display: "flex",
@@ -1051,17 +1048,11 @@ function Home({ setPage }) {
                     marginBottom: "16px"
                 }}
             >
-                <span
-                    style={{
-                        fontSize: "0.78rem",
-                        fontWeight: 600,
-                        color: "var(--black)"
-                    }}
-                >
+                <span style={{ fontSize: "0.78rem", fontWeight: 600, color: "var(--black)" }}>
                     Notes
                 </span>
                 <button
-                    onClick={() => setPage({ name: "blog" })}
+                    onClick={() => navTo("blog")}
                     style={{
                         fontFamily: "var(--sans)",
                         fontSize: "0.72rem",
@@ -1105,7 +1096,6 @@ function CollectionThumb({ col, index, onClick }) {
         ? ALL_ARCHIVE.find(img => img.id === coverImageId)
         : null;
 
-    // Use thumb for cover when available (faster home page)
     const coverSrc = coverImage?.thumbSrc || coverImage?.src;
 
     return (
@@ -1209,7 +1199,7 @@ function CollectionThumb({ col, index, onClick }) {
 }
 
 /* ─────────────────────────────────────────────
-   BLOG CARD (Home → Notes)
+   BLOG CARD
 ───────────────────────────────────────────── */
 
 function BlogCard({ post, onClick }) {
@@ -1302,13 +1292,7 @@ function CollectionDetail({ col, setPage, openLb, goToArchiveWithPreset }) {
             <BackBtn onClick={() => setPage({ name: "home" })}>← Home</BackBtn>
 
             <div style={{ marginBottom: "28px" }}>
-                <p
-                    style={{
-                        fontSize: "0.72rem",
-                        color: "var(--gray)",
-                        marginBottom: "8px"
-                    }}
-                >
+                <p style={{ fontSize: "0.72rem", color: "var(--gray)", marginBottom: "8px" }}>
                     {col.date}
                     {images.length > 0 && ` · ${images.length} highlighted images`}
                 </p>
@@ -1352,11 +1336,7 @@ function CollectionDetail({ col, setPage, openLb, goToArchiveWithPreset }) {
                             <img
                                 src={current.src}
                                 alt={current.name}
-                                style={{
-                                    height: "min(60vh, 45vw)",
-                                    width: "auto",
-                                    display: "block"
-                                }}
+                                style={{ height: "min(60vh, 45vw)", width: "auto", display: "block" }}
                                 loading="lazy"
                                 decoding="async"
                             />
@@ -1366,11 +1346,9 @@ function CollectionDetail({ col, setPage, openLb, goToArchiveWithPreset }) {
                                     height: "min(60vh, 45vw)",
                                     width: "auto",
                                     background:
-                                        {
-                                            dark: "#1a1a1a",
-                                            mid: "#808080",
-                                            light: "#c8c8c8"
-                                        }[current.tone] || "#999"
+                                        { dark: "#1a1a1a", mid: "#808080", light: "#c8c8c8" }[
+                                        current.tone
+                                        ] || "#999"
                                 }}
                             />
                         )}
@@ -1418,9 +1396,7 @@ function CollectionDetail({ col, setPage, openLb, goToArchiveWithPreset }) {
                     </div>
 
                     <div style={{ marginBottom: "28px" }}>
-                        <span style={{ fontSize: "0.9rem", fontWeight: 600 }}>
-                            {current.name}
-                        </span>
+                        <span style={{ fontSize: "0.9rem", fontWeight: 600 }}>{current.name}</span>
                     </div>
                 </>
             )}
@@ -1503,7 +1479,7 @@ function ssBtn(side) {
 }
 
 /* ─────────────────────────────────────────────
-   ARCHIVE with "Load more"
+   ARCHIVE
 ───────────────────────────────────────────── */
 
 function Archive({
@@ -1564,17 +1540,12 @@ function Archive({
                     >
                         Archive
                     </h1>
-                    <p
-                        style={{
-                            fontSize: "0.72rem",
-                            color: "var(--gray)",
-                            marginTop: "5px"
-                        }}
-                    >
+                    <p style={{ fontSize: "0.72rem", color: "var(--gray)", marginTop: "5px" }}>
                         Showing {visibleItems.length} of {filtered.length} matching images ·{" "}
                         {ALL_ARCHIVE.length} total
                     </p>
                 </div>
+
                 <div
                     style={{
                         display: "flex",
@@ -1665,18 +1636,8 @@ function Archive({
                 }}
             >
                 <Dropdown label="Year" options={YEARS} value={fYear} onChange={setFYear} />
-                <Dropdown
-                    label="Film Stock"
-                    options={FILMS}
-                    value={fFilm}
-                    onChange={setFFilm}
-                />
-                <Dropdown
-                    label="Scanner"
-                    options={SCANNERS}
-                    value={fScanner}
-                    onChange={setFScanner}
-                />
+                <Dropdown label="Film Stock" options={FILMS} value={fFilm} onChange={setFFilm} />
+                <Dropdown label="Scanner" options={SCANNERS} value={fScanner} onChange={setFScanner} />
 
                 <MultiDropdown
                     label="Author"
@@ -1685,6 +1646,32 @@ function Archive({
                     onChange={setFAuthors}
                 />
                 <MultiDropdown label="Tag" options={TAGS} values={fTags} onChange={setFTags} />
+
+                <button
+                    onClick={async () => {
+                        const url = window.location.href;
+                        try {
+                            if (navigator.clipboard?.writeText) await navigator.clipboard.writeText(url);
+                            else window.prompt("Copy this link:", url);
+                        } catch {
+                            window.prompt("Copy this link:", url);
+                        }
+                    }}
+                    style={{
+                        fontFamily: "var(--sans)",
+                        fontSize: "0.72rem",
+                        fontWeight: 500,
+                        padding: "8px 14px",
+                        border: "1.5px solid var(--border)",
+                        borderRadius: "10px",
+                        background: "white",
+                        color: "var(--gray)",
+                        cursor: "pointer",
+                        marginLeft: "auto"
+                    }}
+                >
+                    Copy link
+                </button>
 
                 {hasFilters && (
                     <button
@@ -1698,8 +1685,7 @@ function Archive({
                             borderRadius: "10px",
                             background: "white",
                             color: "var(--gray)",
-                            cursor: "pointer",
-                            marginLeft: "auto"
+                            cursor: "pointer"
                         }}
                     >
                         Clear all ✕
@@ -1727,9 +1713,7 @@ function Archive({
             {visibleCount < filtered.length && (
                 <div style={{ marginTop: "24px", display: "flex", justifyContent: "center" }}>
                     <button
-                        onClick={() =>
-                            setVisibleCount(c => Math.min(c + PAGE_SIZE, filtered.length))
-                        }
+                        onClick={() => setVisibleCount(c => Math.min(c + PAGE_SIZE, filtered.length))}
                         style={{
                             fontFamily: "var(--sans)",
                             fontSize: "0.8rem",
@@ -1750,7 +1734,7 @@ function Archive({
 }
 
 /* ─────────────────────────────────────────────
-   GRID + LIST for Archive
+   GRID + LIST
 ───────────────────────────────────────────── */
 
 function GridView({ items, openLb }) {
@@ -1768,12 +1752,8 @@ function GridView({ items, openLb }) {
                         overflow: "hidden",
                         animation: `fin 0.3s ease ${i * 0.02}s both`
                     }}
-                    onMouseEnter={e =>
-                        (e.currentTarget.querySelector(".ov").style.opacity = "1")
-                    }
-                    onMouseLeave={e =>
-                        (e.currentTarget.querySelector(".ov").style.opacity = "0")
-                    }
+                    onMouseEnter={e => (e.currentTarget.querySelector(".ov").style.opacity = "1")}
+                    onMouseLeave={e => (e.currentTarget.querySelector(".ov").style.opacity = "0")}
                 >
                     <Thumb
                         tone={img.tone}
@@ -1786,8 +1766,7 @@ function GridView({ items, openLb }) {
                         style={{
                             position: "absolute",
                             inset: 0,
-                            background:
-                                "linear-gradient(to top, rgba(0,0,0,0.68) 0%, transparent 52%)",
+                            background: "linear-gradient(to top, rgba(0,0,0,0.68) 0%, transparent 52%)",
                             opacity: 0,
                             transition: "opacity 0.2s",
                             display: "flex",
@@ -1942,7 +1921,7 @@ function ListView({ items, openLb }) {
 }
 
 /* ─────────────────────────────────────────────
-   BLOG (Field Notes)
+   BLOG + POST DETAIL
 ───────────────────────────────────────────── */
 
 function Blog({ setPage }) {
@@ -2049,10 +2028,6 @@ function Blog({ setPage }) {
     );
 }
 
-/* ─────────────────────────────────────────────
-   POST DETAIL
-───────────────────────────────────────────── */
-
 function PostDetail({ post, setPage, openLb }) {
     const postImages = (post.images || [])
         .map(id => ALL_ARCHIVE.find(img => img.id === id))
@@ -2127,7 +2102,6 @@ function PostDetail({ post, setPage, openLb }) {
 
 function renderPostBodyWithImages(body, openLb) {
     if (!body) return null;
-
     const blocks = body.split("\n\n");
 
     return blocks.map((block, i) => {
@@ -2151,12 +2125,7 @@ function renderPostBodyWithImages(body, openLb) {
                     <img
                         src={src}
                         alt={alt}
-                        style={{
-                            width: "100%",
-                            height: "auto",
-                            display: "block",
-                            cursor: "pointer"
-                        }}
+                        style={{ width: "100%", height: "auto", display: "block", cursor: "pointer" }}
                         onClick={() => openLb([item], 0)}
                         loading="lazy"
                         decoding="async"
