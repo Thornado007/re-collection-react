@@ -18,7 +18,6 @@ import { readArchiveStateFromUrl, buildUrlSearch } from "./lib/archiveUrl";
    DATA
 ───────────────────────────────────────────── */
 
-// Map images.json into archive items
 const EXTRA = imageData.map(p => ({
     id: p.id,
     name: p.filename,
@@ -37,7 +36,6 @@ const EXTRA = imageData.map(p => ({
 
 const ALL_ARCHIVE = EXTRA;
 
-// Pagination size for Archive "Load more"
 const PAGE_SIZE = 18;
 
 const uniq = k => [
@@ -521,6 +519,80 @@ function MultiDropdown({ label, options, values, onChange }) {
 }
 
 /* ─────────────────────────────────────────────
+   STABLE MASONRY HOOK
+   Distributes items into N columns by appending
+   each item to the shortest column. Once an item
+   is placed it never moves — new items are only
+   ever appended, so "Load more" can't cause jumps.
+───────────────────────────────────────────── */
+
+function useStableMasonry(items, columnCount) {
+    // We cache the column assignments so that growing
+    // the list only appends; it never re-distributes.
+    const cacheRef = useRef({
+        // the ordered list of item-ids we've already placed
+        placedIds: [],
+        // columns: array of arrays of items
+        columns: [],
+        // virtual heights per column (index-based, not px)
+        heights: [],
+        // how many columns the layout was built for
+        colCount: 0
+    });
+
+    return useMemo(() => {
+        const cache = cacheRef.current;
+
+        // If column count changed we must rebuild from scratch
+        const needsRebuild = cache.colCount !== columnCount;
+
+        if (needsRebuild) {
+            cache.placedIds = [];
+            cache.columns = Array.from({ length: columnCount }, () => []);
+            cache.heights = new Array(columnCount).fill(0);
+            cache.colCount = columnCount;
+        }
+
+        // If the new items list is a *different filter result* we also
+        // need to rebuild. We detect this by checking whether the
+        // previously placed ids are still a prefix of the new list.
+        const isPrefix = cache.placedIds.every(
+            (id, idx) => items[idx] && items[idx].id === id
+        );
+
+        if (!isPrefix) {
+            cache.placedIds = [];
+            cache.columns = Array.from({ length: columnCount }, () => []);
+            cache.heights = new Array(columnCount).fill(0);
+        }
+
+        // Append any new items that haven't been placed yet
+        const startIdx = cache.placedIds.length;
+        for (let i = startIdx; i < items.length; i++) {
+            const item = items[i];
+            // find shortest column
+            let minH = cache.heights[0];
+            let minC = 0;
+            for (let c = 1; c < columnCount; c++) {
+                if (cache.heights[c] < minH) {
+                    minH = cache.heights[c];
+                    minC = c;
+                }
+            }
+            cache.columns[minC].push(item);
+            // Use 1 as a uniform proxy height; the real balancing comes
+            // from the browser rendering, but this round-robin keeps
+            // columns roughly even and — crucially — stable.
+            cache.heights[minC] += 1;
+            cache.placedIds.push(item.id);
+        }
+
+        // Return a *new* array reference so React picks up the change
+        return cache.columns.map(col => [...col]);
+    }, [items, columnCount]);
+}
+
+/* ─────────────────────────────────────────────
    APP
 ───────────────────────────────────────────── */
 
@@ -544,7 +616,6 @@ export default function App() {
     const openLb = (items, i) => setLb({ items, index: i });
     const closeLb = () => setLb(null);
 
-    // Read URL on load + on back/forward
     useEffect(() => {
         const applyFromUrl = () => {
             const s = readArchiveStateFromUrl(window.location.search);
@@ -572,7 +643,6 @@ export default function App() {
         return () => window.removeEventListener("popstate", applyFromUrl);
     }, []);
 
-    // Keep URL in sync (shareable links)
     useEffect(() => {
         if (!didInitUrlRef.current) return;
 
@@ -657,7 +727,6 @@ export default function App() {
         fTags.length > 0 ||
         search;
 
-    // Shared filter logic (Tags = AND)
     const filtered = useMemo(() => {
         const q = (deferredSearch || "").trim().toLowerCase();
 
@@ -718,15 +787,6 @@ export default function App() {
         }
 
         .col-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
-
-        .archive-grid { columns: 3; column-gap: 10px; }
-        @media (max-width: 800px) { .archive-grid { columns: 2; } }
-        @media (max-width: 400px) { .archive-grid { columns: 1; } }
-
-        .archive-grid > div {
-          content-visibility: auto;
-          contain-intrinsic-size: 320px 320px;
-        }
 
         .list-row    { display: grid; grid-template-columns: 48px 1fr 64px 130px 160px 110px; min-height: 48px; }
         .list-header { display: grid; grid-template-columns: 48px 1fr 64px 130px 160px 110px; }
@@ -1024,7 +1084,6 @@ function Home({ navTo, setPage }) {
 
             <div className="col-grid" style={{ marginBottom: "56px" }}>
                 {COLLECTIONS.map((col, i) => {
-                    // SAME logic as archive (shared matcher)
                     const ui = presetToUiState(col.filters);
                     const count = ALL_ARCHIVE.filter(img => imageMatchesUiFilters(img, ui))
                         .length;
@@ -1705,7 +1764,7 @@ function Archive({
                     No images found
                 </div>
             ) : viewMode === "grid" ? (
-                <GridView items={visibleItems} openLb={openLb} />
+                <GridView items={visibleItems} openLb={openLb} allFiltered={filtered} />
             ) : (
                 <ListView items={visibleItems} openLb={openLb} />
             )}
@@ -1734,51 +1793,113 @@ function Archive({
 }
 
 /* ─────────────────────────────────────────────
+   RESPONSIVE COLUMN COUNT HOOK
+───────────────────────────────────────────── */
+
+function useColumnCount() {
+    const [cols, setCols] = useState(() => {
+        if (typeof window === "undefined") return 3;
+        if (window.innerWidth <= 400) return 1;
+        if (window.innerWidth <= 800) return 2;
+        return 3;
+    });
+
+    useEffect(() => {
+        const update = () => {
+            const w = window.innerWidth;
+            setCols(w <= 400 ? 1 : w <= 800 ? 2 : 3);
+        };
+        window.addEventListener("resize", update);
+        return () => window.removeEventListener("resize", update);
+    }, []);
+
+    return cols;
+}
+
+/* ─────────────────────────────────────────────
    GRID + LIST
 ───────────────────────────────────────────── */
 
-function GridView({ items, openLb }) {
+function GridView({ items, openLb, allFiltered }) {
+    const columnCount = useColumnCount();
+    const columns = useStableMasonry(items, columnCount);
+
+    // Build a flat index map so lightbox gets the right index
+    // into the `items` array (which is the visible slice).
+    // We need to know the index of each item in `items`.
+    const idToIndex = useMemo(() => {
+        const map = new Map();
+        items.forEach((img, i) => map.set(img.id, i));
+        return map;
+    }, [items]);
+
     return (
-        <div className="archive-grid">
-            {items.map((img, i) => (
-                <div
-                    key={img.id}
-                    onClick={() => openLb(items, i)}
-                    style={{
-                        breakInside: "avoid",
-                        marginBottom: "10px",
-                        cursor: "pointer",
-                        position: "relative",
-                        overflow: "hidden",
-                        animation: `fin 0.3s ease ${i * 0.02}s both`
-                    }}
-                    onMouseEnter={e => (e.currentTarget.querySelector(".ov").style.opacity = "1")}
-                    onMouseLeave={e => (e.currentTarget.querySelector(".ov").style.opacity = "0")}
-                >
-                    <Thumb
-                        tone={img.tone}
-                        ratio={img.ratio || "3/4"}
-                        src={img.thumbSrc || img.src}
-                        alt={img.name}
-                    />
-                    <div
-                        className="ov"
-                        style={{
-                            position: "absolute",
-                            inset: 0,
-                            background: "linear-gradient(to top, rgba(0,0,0,0.68) 0%, transparent 52%)",
-                            opacity: 0,
-                            transition: "opacity 0.2s",
-                            display: "flex",
-                            flexDirection: "column",
-                            justifyContent: "flex-end",
-                            padding: "12px"
-                        }}
-                    >
-                        <div style={{ fontSize: "0.8rem", fontWeight: 600, color: "white" }}>
-                            {img.name}
-                        </div>
-                    </div>
+        <div
+            style={{
+                display: "grid",
+                gridTemplateColumns: `repeat(${columnCount}, 1fr)`,
+                columnGap: "10px",
+                alignItems: "start"
+            }}
+        >
+            {columns.map((col, colIdx) => (
+                <div key={colIdx}>
+                    {col.map(img => {
+                        const flatIndex = idToIndex.get(img.id) ?? 0;
+                        return (
+                            <div
+                                key={img.id}
+                                onClick={() => openLb(items, flatIndex)}
+                                style={{
+                                    marginBottom: "10px",
+                                    cursor: "pointer",
+                                    position: "relative",
+                                    overflow: "hidden",
+                                    animation: `fin 0.3s ease both`
+                                }}
+                                onMouseEnter={e => {
+                                    const ov = e.currentTarget.querySelector(".ov");
+                                    if (ov) ov.style.opacity = "1";
+                                }}
+                                onMouseLeave={e => {
+                                    const ov = e.currentTarget.querySelector(".ov");
+                                    if (ov) ov.style.opacity = "0";
+                                }}
+                            >
+                                <Thumb
+                                    tone={img.tone}
+                                    ratio={img.ratio || "3/4"}
+                                    src={img.thumbSrc || img.src}
+                                    alt={img.name}
+                                />
+                                <div
+                                    className="ov"
+                                    style={{
+                                        position: "absolute",
+                                        inset: 0,
+                                        background:
+                                            "linear-gradient(to top, rgba(0,0,0,0.68) 0%, transparent 52%)",
+                                        opacity: 0,
+                                        transition: "opacity 0.2s",
+                                        display: "flex",
+                                        flexDirection: "column",
+                                        justifyContent: "flex-end",
+                                        padding: "12px"
+                                    }}
+                                >
+                                    <div
+                                        style={{
+                                            fontSize: "0.8rem",
+                                            fontWeight: 600,
+                                            color: "white"
+                                        }}
+                                    >
+                                        {img.name}
+                                    </div>
+                                </div>
+                            </div>
+                        );
+                    })}
                 </div>
             ))}
         </div>

@@ -1843,7 +1843,4239 @@
     "scanningEquipment": "Nikon Coolscan 5000",
     "tags": [
       "self portrait",
-      "kitchen", "portrait", "mirror"
+      "kitchen",
+      "portrait",
+      "mirror"
+    ]
+  },
+  {
+    "id": "201901_R1_CanonPrimaSuper115_KodakPortra400_15",
+    "filename": "201901",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "man",
+      "is",
+      "mess",
+      "down",
+      "kneeling",
+      "messy"
+    ]
+  },
+  {
+    "id": "201901_R1_CanonPrimaSuper115_KodakPortra400_25",
+    "filename": "201901",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "window",
+      "standing",
+      "kitchen",
+      "looking",
+      "out"
+    ]
+  },
+  {
+    "id": "201901_R1_CanonPrimaSuper115_KodakPortra400_35",
+    "filename": "201901",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "man",
+      "is",
+      "picture",
+      "taking"
+    ]
+  },
+  {
+    "id": "201901_R2_CanonPrimaSuper115_KodakPortra400_01",
+    "filename": "201901",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "wooden",
+      "standing",
+      "dog",
+      "room",
+      "floor"
+    ]
+  },
+  {
+    "id": "201901_R2_CanonPrimaSuper115_KodakPortra400_28",
+    "filename": "201901",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "cigarette",
+      "smoking"
+    ]
+  },
+  {
+    "id": "201903_R2_CanonPrimaSuper115_KodakPortra400_01",
+    "filename": "201903",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "girl",
+      "laying",
+      "purple",
+      "young",
+      "couch"
+    ]
+  },
+  {
+    "id": "201903_R2_CanonPrimaSuper115_KodakPortra400_06",
+    "filename": "201903",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "face",
+      "pink",
+      "mask",
+      "young",
+      "boy"
+    ]
+  },
+  {
+    "id": "201903_R3_NikonFe_KodakGC400_15",
+    "filename": "201903",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "reflection",
+      "mirror",
+      "truck"
+    ]
+  },
+  {
+    "id": "201903_R4_NikonFe_KodakPortra400_01",
+    "filename": "201903",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "girl",
+      "tie",
+      "black",
+      "young",
+      "white",
+      "jacket"
+    ]
+  },
+  {
+    "id": "201903_R4_NikonFe_KodakPortra400_35",
+    "filename": "201903",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "his",
+      "man",
+      "laying",
+      "down",
+      "head",
+      "pillow"
+    ]
+  },
+  {
+    "id": "201905_R1_CanonSuperPrima115_KodakColorplus200_17",
+    "filename": "201905",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "girl",
+      "food",
+      "at",
+      "plate",
+      "young",
+      "sitting"
+    ]
+  },
+  {
+    "id": "201909_R1_NikonFe_Expired200_03",
+    "filename": "201909",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "wine",
+      "man",
+      "bottle",
+      "at",
+      "sitting",
+      "table"
+    ]
+  },
+  {
+    "id": "201909_R1_NikonFe_Expired200_10",
+    "filename": "201909",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "writing",
+      "piece",
+      "beach",
+      "paper",
+      "sitting"
+    ]
+  },
+  {
+    "id": "201909_R1_NikonFe_Expired200_11",
+    "filename": "201909",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "long",
+      "pier",
+      "hair",
+      "standing"
+    ]
+  },
+  {
+    "id": "201909_R1_NikonFe_Expired200_14",
+    "filename": "201909",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "by",
+      "man",
+      "water",
+      "young",
+      "sitting",
+      "rock"
+    ]
+  },
+  {
+    "id": "201909_R1_NikonFe_Expired200_26",
+    "filename": "201909",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "chair",
+      "is",
+      "red",
+      "sitting",
+      "shirt"
+    ]
+  },
+  {
+    "id": "201909_R2_NikonFe_KodakColorplus200_02",
+    "filename": "201909",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "man",
+      "no",
+      "shirt"
+    ]
+  },
+  {
+    "id": "201909_R2_NikonFe_KodakColorplus200_07",
+    "filename": "201909",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "cigarette",
+      "holding",
+      "is",
+      "at",
+      "looking"
+    ]
+  },
+  {
+    "id": "201909_R2_NikonFe_KodakColorplus200_09",
+    "filename": "201909",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "group",
+      "people",
+      "standing",
+      "sidewalk"
+    ]
+  },
+  {
+    "id": "201909_R2_NikonFe_KodakColorplus200_10",
+    "filename": "201909",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "plastic",
+      "sheet",
+      "side",
+      "covered",
+      "road",
+      "car"
+    ]
+  },
+  {
+    "id": "201909_R2_NikonFe_KodakColorplus200_18",
+    "filename": "201909",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "at",
+      "eating",
+      "dog",
+      "sitting",
+      "hot"
+    ]
+  },
+  {
+    "id": "201909_R2_NikonFe_KodakColorplus200_20",
+    "filename": "201909",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "cigarette",
+      "holding",
+      "their",
+      "hand"
+    ]
+  },
+  {
+    "id": "201909_R2_NikonFe_KodakColorplus200_33",
+    "filename": "201909",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "white",
+      "man",
+      "shirt"
+    ]
+  },
+  {
+    "id": "201910_R1_NikonFe_KodakColorplus200_02",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "front",
+      "man",
+      "standing",
+      "store",
+      "book"
+    ]
+  },
+  {
+    "id": "201910_R1_NikonFe_KodakColorplus200_04",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "yellow",
+      "box",
+      "filled",
+      "food"
+    ]
+  },
+  {
+    "id": "201910_R1_NikonFe_KodakColorplus200_06",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "pile",
+      "fruit"
+    ]
+  },
+  {
+    "id": "201910_R1_NikonFe_KodakColorplus200_07",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "man",
+      "background",
+      "haircut",
+      "bald",
+      "flag"
+    ]
+  },
+  {
+    "id": "201910_R1_NikonFe_KodakColorplus200_08",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "american",
+      "front",
+      "man",
+      "large",
+      "flag",
+      "standing"
+    ]
+  },
+  {
+    "id": "201910_R2_NikonFe_KodakColorplus200_02",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "fire",
+      "hydrant",
+      "sidewalk",
+      "woods"
+    ]
+  },
+  {
+    "id": "201910_R2_NikonFe_KodakColorplus200_16",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "fan",
+      "holding",
+      "their",
+      "paper",
+      "hand"
+    ]
+  },
+  {
+    "id": "201910_R2_NikonFe_KodakColorplus200_29",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "is",
+      "hair",
+      "getting",
+      "done",
+      "her"
+    ]
+  },
+  {
+    "id": "201910_R2_NikonFe_KodakColorplus200_30",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "hair",
+      "long"
+    ]
+  },
+  {
+    "id": "201910_R2_NikonFe_KodakColorplus200_31",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "food",
+      "fork",
+      "piece",
+      "eating"
+    ]
+  },
+  {
+    "id": "201910_R2_NikonFe_KodakColorplus200_32",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "girl",
+      "bun",
+      "messy"
+    ]
+  },
+  {
+    "id": "201910_R2_NikonFe_KodakColorplus200_33",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "face",
+      "hands",
+      "her"
+    ]
+  },
+  {
+    "id": "201910_R3_NikonFe_KodakPortra400_09",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "is",
+      "mirror",
+      "selfie",
+      "taking"
+    ]
+  },
+  {
+    "id": "201910_R3_NikonFe_KodakPortra400_14",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "pink",
+      "wearing",
+      "hat",
+      "white",
+      "shirt"
+    ]
+  },
+  {
+    "id": "201910_R3_NikonFe_KodakPortra400_30",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "concrete",
+      "chairs",
+      "yellow",
+      "bunch",
+      "sitting",
+      "floor"
+    ]
+  },
+  {
+    "id": "201910_R4_NikonFE_KodakColorplus200_01",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "front",
+      "building",
+      "sitting",
+      "bench"
+    ]
+  },
+  {
+    "id": "201910_R4_NikonFE_KodakColorplus200_03",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "next",
+      "red",
+      "bike",
+      "parked",
+      "wall"
+    ]
+  },
+  {
+    "id": "201910_R4_NikonFE_KodakColorplus200_10",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "sidewalk",
+      "standing",
+      "pair",
+      "shoes"
+    ]
+  },
+  {
+    "id": "201910_R4_NikonFE_KodakColorplus200_13",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "standing",
+      "bathrobe",
+      "window"
+    ]
+  },
+  {
+    "id": "201910_R4_NikonFE_KodakColorplus200_15",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "his",
+      "man",
+      "hands",
+      "sidewalk",
+      "standing",
+      "pockets"
+    ]
+  },
+  {
+    "id": "201910_R4_NikonFE_KodakColorplus200_19",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "door",
+      "living",
+      "through",
+      "room",
+      "view"
+    ]
+  },
+  {
+    "id": "201910_R4_NikonFE_KodakColorplus200_24",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "fire",
+      "hydrant",
+      "dirty",
+      "area"
+    ]
+  },
+  {
+    "id": "201910_R4_NikonFE_KodakColorplus200_25",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "front",
+      "man",
+      "garbage",
+      "building",
+      "standing"
+    ]
+  },
+  {
+    "id": "201910_R4_NikonFE_KodakColorplus200_31",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "man",
+      "street",
+      "city",
+      "down",
+      "walking"
+    ]
+  },
+  {
+    "id": "201911_R1_NikonFe_KodakColorplus200_02",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "tennis",
+      "court"
+    ]
+  },
+  {
+    "id": "201911_R1_NikonFe_KodakColorplus200_05",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "his",
+      "man",
+      "blue",
+      "nail",
+      "face",
+      "polish"
+    ]
+  },
+  {
+    "id": "201911_R1_NikonFe_KodakColorplus200_12",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "through",
+      "jungle",
+      "path"
+    ]
+  },
+  {
+    "id": "201911_R1_NikonFe_KodakColorplus200_24",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "holding",
+      "flowered",
+      "is",
+      "cell",
+      "shirt"
+    ]
+  },
+  {
+    "id": "201911_R1_NikonFe_KodakColorplus200_37",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "fr",
+      "grass",
+      "young",
+      "sitting",
+      "boy"
+    ]
+  },
+  {
+    "id": "201911_R3_NikonFE_KodakColorplus200_72",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "painted",
+      "body",
+      "robot",
+      "fake",
+      "like"
+    ]
+  },
+  {
+    "id": "201911_R3_NikonFE_KodakColorplus200_73",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "colorful",
+      "face",
+      "white",
+      "shirt"
+    ]
+  },
+  {
+    "id": "201911_R3_NikonFE_KodakColorplus200_74",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "tennis",
+      "standing",
+      "young",
+      "court",
+      "boy"
+    ]
+  },
+  {
+    "id": "201911_R3_NikonFE_KodakColorplus200_75",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "group",
+      "people",
+      "standing",
+      "field"
+    ]
+  },
+  {
+    "id": "201911_R3_NikonFE_KodakColorplus200_77",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "white",
+      "dress"
+    ]
+  },
+  {
+    "id": "201911_R3_NikonFE_KodakColorplus200_78",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "outfit",
+      "colorful",
+      "white",
+      "jacket"
+    ]
+  },
+  {
+    "id": "201911_R3_NikonFE_KodakColorplus200_79",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "glasses",
+      "balcony",
+      "man",
+      "mustache"
+    ]
+  },
+  {
+    "id": "201911_R3_NikonFE_KodakColorplus200_81",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "man",
+      "his",
+      "tie",
+      "around",
+      "neck",
+      "glasses"
+    ]
+  },
+  {
+    "id": "201911_R3_NikonFE_KodakColorplus200_83",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "camera",
+      "holding",
+      "hands",
+      "her"
+    ]
+  },
+  {
+    "id": "201911_R3_NikonFE_KodakColorplus200_89",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "long",
+      "hair",
+      "white",
+      "shirt"
+    ]
+  },
+  {
+    "id": "201912_R1_NikonFe_KodakColorplus200_03",
+    "filename": "201912",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "is",
+      "bending",
+      "piece",
+      "down",
+      "paper"
+    ]
+  },
+  {
+    "id": "201912_R1_NikonFe_KodakColorplus200_05",
+    "filename": "201912",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "wall",
+      "painting",
+      "mural",
+      "man"
+    ]
+  },
+  {
+    "id": "201912_R1_NikonFe_KodakColorplus200_06",
+    "filename": "201912",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "like",
+      "face",
+      "painted"
+    ]
+  },
+  {
+    "id": "201912_R1_NikonFe_KodakColorplus200_08",
+    "filename": "201912",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "silver",
+      "purple",
+      "pants",
+      "jacket"
+    ]
+  },
+  {
+    "id": "201912_R1_NikonFe_KodakColorplus200_12",
+    "filename": "201912",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "tooth",
+      "blue",
+      "yellow",
+      "jean",
+      "brush",
+      "boy"
+    ]
+  },
+  {
+    "id": "201912_R1_NikonFe_KodakColorplus200_16",
+    "filename": "201912",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "mask",
+      "man",
+      "costume"
+    ]
+  },
+  {
+    "id": "201912_R1_NikonFe_KodakColorplus200_19",
+    "filename": "201912",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "ground",
+      "is",
+      "towel",
+      "laying"
+    ]
+  },
+  {
+    "id": "201912_R1_NikonFe_KodakColorplus200_21",
+    "filename": "201912",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "man",
+      "platform",
+      "cell",
+      "standing",
+      "train"
+    ]
+  },
+  {
+    "id": "201912_R1_NikonFe_KodakColorplus200_22",
+    "filename": "201912",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "road",
+      "middle",
+      "house",
+      "small"
+    ]
+  },
+  {
+    "id": "201912_R1_NikonFe_KodakColorplus200_27",
+    "filename": "201912",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "swimsuit",
+      "black",
+      "man"
+    ]
+  },
+  {
+    "id": "202001_R1_MinoltaX300_KodakGold200_14",
+    "filename": "202001",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "young",
+      "girl",
+      "hoodie"
+    ]
+  },
+  {
+    "id": "202001_R1_MinoltaX300_KodakGold200_15",
+    "filename": "202001",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "young",
+      "pink",
+      "girl",
+      "hoodie"
+    ]
+  },
+  {
+    "id": "202001_R1_MinoltaX300_KodakGold200_18",
+    "filename": "202001",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "face",
+      "man",
+      "his",
+      "holding",
+      "red",
+      "young"
+    ]
+  },
+  {
+    "id": "202001_R1_MinoltaX300_KodakGold200_19",
+    "filename": "202001",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "cigarette",
+      "smoking"
+    ]
+  },
+  {
+    "id": "202001_R1_MinoltaX300_KodakGold200_30",
+    "filename": "202001",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "it",
+      "flying",
+      "building",
+      "bird",
+      "over"
+    ]
+  },
+  {
+    "id": "202001_R2_CanonPrimaSuper115_Kodak200_05",
+    "filename": "202001",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "girl",
+      "sleeping",
+      "is",
+      "young",
+      "bed"
+    ]
+  },
+  {
+    "id": "202001_R2_CanonPrimaSuper115_Kodak200_12",
+    "filename": "202001",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "sitting",
+      "desk",
+      "laptop"
+    ]
+  },
+  {
+    "id": "202002_R1_MinoltaX300_KodakGold200_02",
+    "filename": "202002",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "pile",
+      "dirt",
+      "large"
+    ]
+  },
+  {
+    "id": "202002_R1_MinoltaX300_KodakGold200_12",
+    "filename": "202002",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "man",
+      "is",
+      "tree",
+      "picture",
+      "taking"
+    ]
+  },
+  {
+    "id": "202002_R2_MinoltaX300_KodakGold200_02",
+    "filename": "202002",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "man",
+      "laying",
+      "young",
+      "shirtless",
+      "bed"
+    ]
+  },
+  {
+    "id": "202002_R2_MinoltaX300_KodakGold200_03",
+    "filename": "202002",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "necklace",
+      "his",
+      "man",
+      "neck",
+      "young"
+    ]
+  },
+  {
+    "id": "202002_R2_MinoltaX300_KodakGold200_20",
+    "filename": "202002",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "curtains",
+      "white",
+      "window"
+    ]
+  },
+  {
+    "id": "202003_R1_MinoltaX300_KodakGold200_02",
+    "filename": "202003",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "closed",
+      "eyes",
+      "her"
+    ]
+  },
+  {
+    "id": "202003_R1_MinoltaX300_KodakGold200_07",
+    "filename": "202003",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "around",
+      "neck",
+      "scarf",
+      "her"
+    ]
+  },
+  {
+    "id": "202003_R1_MinoltaX300_KodakGold200_17",
+    "filename": "202003",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "girl",
+      "floor",
+      "laying",
+      "head",
+      "pillow",
+      "her"
+    ]
+  },
+  {
+    "id": "202004_R1_MinoltaX300_FujiProvia100F_19",
+    "filename": "202004",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "food",
+      "holding",
+      "dress",
+      "red",
+      "plate"
+    ]
+  },
+  {
+    "id": "202004_R1_MinoltaX300_FujiProvia100F_33",
+    "filename": "202004",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "grave",
+      "small",
+      "plant",
+      "out",
+      "growing"
+    ]
+  },
+  {
+    "id": "202004_R1_MinoltaX300_FujiProvia100F_35",
+    "filename": "202004",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "is",
+      "touching",
+      "flower",
+      "grass"
+    ]
+  },
+  {
+    "id": "202004_R1_MinoltaX300_FujiProvia100F_36",
+    "filename": "202004",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "hair",
+      "flower",
+      "her"
+    ]
+  },
+  {
+    "id": "202004_R1_MinoltaX300_FujiProvia100F_37",
+    "filename": "202004",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "next",
+      "chair",
+      "grass",
+      "cat",
+      "sitting"
+    ]
+  },
+  {
+    "id": "202004_R1_MinoltaX300_FujiProvia100F_39",
+    "filename": "202004",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "chair",
+      "near",
+      "grass",
+      "cat",
+      "sitting"
+    ]
+  },
+  {
+    "id": "202004_R1_MinoltaX300_FujiProvia100F_44",
+    "filename": "202004",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "drink",
+      "is",
+      "sandwich",
+      "eating"
+    ]
+  },
+  {
+    "id": "202004_R1_MinoltaX300_FujiProvia100F_47",
+    "filename": "202004",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "it",
+      "face",
+      "smiley",
+      "holding",
+      "an"
+    ]
+  },
+  {
+    "id": "202004_R1_MinoltaX300_FujiProvia100F_48",
+    "filename": "202004",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "apple",
+      "red",
+      "her",
+      "mouth"
+    ]
+  },
+  {
+    "id": "202004_R1_MinoltaX300_KodakColorplus200_18",
+    "filename": "202004",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "park",
+      "walking",
+      "dog"
+    ]
+  },
+  {
+    "id": "202008_R1_MinoltaX300_Expired_11",
+    "filename": "202008",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "young",
+      "bed",
+      "girl",
+      "laying"
+    ]
+  },
+  {
+    "id": "202008_R1_MinoltaX300_Expired_29",
+    "filename": "202008",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "couple",
+      "ground",
+      "laying"
+    ]
+  },
+  {
+    "id": "202008_R1_MinoltaX300_Expired_30",
+    "filename": "202008",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "ground",
+      "people",
+      "two",
+      "laying",
+      "shade"
+    ]
+  },
+  {
+    "id": "202009_R1_MinoltaX300_KodakPortra400_14",
+    "filename": "202009",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "into",
+      "pond",
+      "s",
+      "reaching",
+      "hand"
+    ]
+  },
+  {
+    "id": "202009_R2_MinoltaX700_Expired_06",
+    "filename": "202009",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "grass",
+      "laying"
+    ]
+  },
+  {
+    "id": "202009_R2_MinoltaX700_Expired_07",
+    "filename": "202009",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "skirt",
+      "tan",
+      "top",
+      "blue",
+      "tank"
+    ]
+  },
+  {
+    "id": "202009_R2_MinoltaX700_Expired_09",
+    "filename": "202009",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "ground",
+      "man",
+      "laying"
+    ]
+  },
+  {
+    "id": "202009_R2_MinoltaX700_Expired_12",
+    "filename": "202009",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "road",
+      "woods",
+      "dirt"
+    ]
+  },
+  {
+    "id": "202102_R1_MinoltaX300_KodakGold200_09",
+    "filename": "202102",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "it",
+      "small",
+      "piece",
+      "ice",
+      "rock"
+    ]
+  },
+  {
+    "id": "202104_R1_MinoltaX300_KodakGC400_03",
+    "filename": "202104",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "sky",
+      "reaching",
+      "up",
+      "hand"
+    ]
+  },
+  {
+    "id": "202107_R1_MinoltaX300_KodakGold20002427",
+    "filename": "202107",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "picture",
+      "herself",
+      "taking"
+    ]
+  },
+  {
+    "id": "202107_R1_MinoltaX300_KodakGold20002435",
+    "filename": "202107",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "man",
+      "next",
+      "bike",
+      "wall",
+      "sitting",
+      "brick"
+    ]
+  },
+  {
+    "id": "202107_R1_MinoltaX300_KodakGold20002440",
+    "filename": "202107",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "man",
+      "surface",
+      "sculpture",
+      "circular",
+      "metal"
+    ]
+  },
+  {
+    "id": "202107_R1_MinoltaX300_KodakGold20002443",
+    "filename": "202107",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "by",
+      "people",
+      "group",
+      "grass",
+      "water",
+      "sitting"
+    ]
+  },
+  {
+    "id": "202107_R1_MinoltaX300_KodakGold20002460",
+    "filename": "202107",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "holding",
+      "their",
+      "flowers",
+      "bunch",
+      "hand"
+    ]
+  },
+  {
+    "id": "202108_R1_CanonRebel2000_KodakGold200_08",
+    "filename": "202108",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "bunch",
+      "flowers",
+      "pool",
+      "floating"
+    ]
+  },
+  {
+    "id": "202108_R1_CanonRebel2000_KodakGold200_29",
+    "filename": "202108",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "man",
+      "playing",
+      "golf",
+      "course",
+      "green"
+    ]
+  },
+  {
+    "id": "202110_R1_CanonRebel2000_KodakGold200_02",
+    "filename": "202110",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "table",
+      "woods",
+      "chairs"
+    ]
+  },
+  {
+    "id": "202110_R1_CanonRebel2000_KodakGold200_03",
+    "filename": "202110",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "it",
+      "hole",
+      "woods",
+      "sitting",
+      "table"
+    ]
+  },
+  {
+    "id": "202112_R1_CanonRebel200_KodakGold200_09",
+    "filename": "202112",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "by",
+      "is",
+      "standing",
+      "woods",
+      "fence",
+      "deer"
+    ]
+  },
+  {
+    "id": "202112_R1_CanonRebel200_KodakGold200_22",
+    "filename": "202112",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "ground",
+      "top",
+      "strewn",
+      "broken",
+      "metal",
+      "table"
+    ]
+  },
+  {
+    "id": "202112_R1_CanonRebel200_KodakGold200_26",
+    "filename": "202112",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "middle",
+      "white",
+      "area",
+      "strewn",
+      "sitting",
+      "table"
+    ]
+  },
+  {
+    "id": "202203_R3_MinoltaX700_PorstChromeSuper100_13-2",
+    "filename": "202203",
+    "artist": "Thor Vermin",
+    "filmType": "Black & White",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "legs",
+      "crossed",
+      "sitting",
+      "bench",
+      "her"
+    ]
+  },
+  {
+    "id": "202204_R1_MinoltaX700_KodakFarbweltKlassik200_28",
+    "filename": "202204",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "it",
+      "food",
+      "small",
+      "bowl",
+      "piece",
+      "white"
+    ]
+  },
+  {
+    "id": "202205_R2_OlympusSuperzoom_FujiSensia100_12",
+    "filename": "202205",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "pot",
+      "next",
+      "is",
+      "laying",
+      "cat",
+      "table"
+    ]
+  },
+  {
+    "id": "202206_R1_OlympusTripXB_KodakColorplusExp_20",
+    "filename": "202206",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "next",
+      "building",
+      "field",
+      "flowers",
+      "bunch"
+    ]
+  },
+  {
+    "id": "202206_R3_OLSuperzoom_KodakColorplusExp_06",
+    "filename": "202206",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "holding",
+      "bag",
+      "dog",
+      "paper",
+      "hot"
+    ]
+  },
+  {
+    "id": "202207_R1_MinoltaX300_FujiSuperia200_02",
+    "filename": "202207",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "hair",
+      "bun",
+      "her"
+    ]
+  },
+  {
+    "id": "202207_R1_MinoltaX300_FujiSuperia200_25",
+    "filename": "202207",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "her",
+      "car",
+      "sitting",
+      "seat",
+      "hand"
+    ]
+  },
+  {
+    "id": "202207_R2_MinoltaX300_KodakGB200_09",
+    "filename": "202207",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "bunch",
+      "flowers",
+      "fence",
+      "garden"
+    ]
+  },
+  {
+    "id": "202207_R2_MinoltaX300_KodakGB200_37",
+    "filename": "202207",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "park",
+      "swinging",
+      "swing"
+    ]
+  },
+  {
+    "id": "202207_R4_FujiHalf_FujiSuperia200_19",
+    "filename": "202207",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "bird",
+      "branch",
+      "sitting",
+      "tree"
+    ]
+  },
+  {
+    "id": "202208_R1_MinoltaX300_KodakColorplus200_32",
+    "filename": "202208",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "floating",
+      "ring",
+      "pool",
+      "rubber"
+    ]
+  },
+  {
+    "id": "202208_R2_MinoltaX300_KodakGold20003243",
+    "filename": "202208",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "cigarette",
+      "holding",
+      "their",
+      "hand"
+    ]
+  },
+  {
+    "id": "202211_R1_MinoltaX300_IlfordDelta400_25",
+    "filename": "202211",
+    "artist": "Thor Vermin",
+    "filmType": "Black & White",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "helmet",
+      "robot",
+      "up",
+      "close"
+    ]
+  },
+  {
+    "id": "202411_R4_NikonFe_kodakColorplus200_39",
+    "filename": "202411",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2024",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "gray",
+      "background",
+      "city",
+      "shirt"
+    ]
+  },
+  {
+    "id": "202411_R4_NikonFe_kodakColorplus200_40",
+    "filename": "202411",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2024",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "red",
+      "hair",
+      "blonde",
+      "shirt"
+    ]
+  },
+  {
+    "id": "202411_R4_NikonFe_kodakColorplus200_41",
+    "filename": "202411",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2024",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "red",
+      "hair",
+      "blonde",
+      "shirt"
+    ]
+  },
+  {
+    "id": "202411_R4_NikonFe_kodakColorplus200_46",
+    "filename": "202411",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2024",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "jumping",
+      "is",
+      "air",
+      "bench"
+    ]
+  },
+  {
+    "id": "202411_R4_NikonFe_kodakColorplus200_47",
+    "filename": "202411",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2024",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "suit",
+      "man",
+      "is",
+      "black",
+      "standing",
+      "bench"
+    ]
+  },
+  {
+    "id": "202411_R4_NikonFe_kodakColorplus200_48",
+    "filename": "202411",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2024",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "people",
+      "group",
+      "down",
+      "walking",
+      "path"
+    ]
+  },
+  {
+    "id": "202411_R4_NikonFe_kodakColorplus200_50",
+    "filename": "202411",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2024",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "picture",
+      "herself",
+      "taking"
+    ]
+  },
+  {
+    "id": "202411_R4_NikonFe_kodakColorplus200_53",
+    "filename": "202411",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2024",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "ground",
+      "laying"
+    ]
+  },
+  {
+    "id": "202411_R4_NikonFe_kodakColorplus200_54",
+    "filename": "202411",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2024",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "sitting",
+      "ground",
+      "man"
+    ]
+  },
+  {
+    "id": "202411_R4_NikonFe_kodakColorplus200_55",
+    "filename": "202411",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2024",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "is",
+      "hair",
+      "getting",
+      "done",
+      "her"
+    ]
+  },
+  {
+    "id": "202411_R4_NikonFe_kodakColorplus200_65",
+    "filename": "202411",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2024",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "night",
+      "dark",
+      "at",
+      "alley",
+      "down"
+    ]
+  },
+  {
+    "id": "201901_R1_CanonPrimaSuper115_KodakPortra400_15",
+    "filename": "201901",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "man",
+      "is",
+      "mess",
+      "down",
+      "kneeling",
+      "messy"
+    ]
+  },
+  {
+    "id": "201901_R1_CanonPrimaSuper115_KodakPortra400_25",
+    "filename": "201901",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "window",
+      "standing",
+      "kitchen",
+      "looking",
+      "out"
+    ]
+  },
+  {
+    "id": "201901_R1_CanonPrimaSuper115_KodakPortra400_35",
+    "filename": "201901",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "man",
+      "is",
+      "picture",
+      "taking"
+    ]
+  },
+  {
+    "id": "201901_R2_CanonPrimaSuper115_KodakPortra400_01",
+    "filename": "201901",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "wooden",
+      "standing",
+      "dog",
+      "room",
+      "floor"
+    ]
+  },
+  {
+    "id": "201901_R2_CanonPrimaSuper115_KodakPortra400_28",
+    "filename": "201901",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "cigarette",
+      "smoking"
+    ]
+  },
+  {
+    "id": "201903_R2_CanonPrimaSuper115_KodakPortra400_01",
+    "filename": "201903",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "girl",
+      "laying",
+      "purple",
+      "young",
+      "couch"
+    ]
+  },
+  {
+    "id": "201903_R2_CanonPrimaSuper115_KodakPortra400_06",
+    "filename": "201903",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "face",
+      "pink",
+      "mask",
+      "young",
+      "boy"
+    ]
+  },
+  {
+    "id": "201903_R3_NikonFe_KodakGC400_15",
+    "filename": "201903",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "reflection",
+      "mirror",
+      "truck"
+    ]
+  },
+  {
+    "id": "201903_R4_NikonFe_KodakPortra400_01",
+    "filename": "201903",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "girl",
+      "tie",
+      "black",
+      "young",
+      "white",
+      "jacket"
+    ]
+  },
+  {
+    "id": "201903_R4_NikonFe_KodakPortra400_35",
+    "filename": "201903",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "his",
+      "man",
+      "laying",
+      "down",
+      "head",
+      "pillow"
+    ]
+  },
+  {
+    "id": "201905_R1_CanonSuperPrima115_KodakColorplus200_17",
+    "filename": "201905",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "girl",
+      "food",
+      "at",
+      "plate",
+      "young",
+      "sitting"
+    ]
+  },
+  {
+    "id": "201909_R1_NikonFe_Expired200_03",
+    "filename": "201909",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "wine",
+      "man",
+      "bottle",
+      "at",
+      "sitting",
+      "table"
+    ]
+  },
+  {
+    "id": "201909_R1_NikonFe_Expired200_10",
+    "filename": "201909",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "writing",
+      "piece",
+      "beach",
+      "paper",
+      "sitting"
+    ]
+  },
+  {
+    "id": "201909_R1_NikonFe_Expired200_11",
+    "filename": "201909",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "long",
+      "pier",
+      "hair",
+      "standing"
+    ]
+  },
+  {
+    "id": "201909_R1_NikonFe_Expired200_14",
+    "filename": "201909",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "by",
+      "man",
+      "water",
+      "young",
+      "sitting",
+      "rock"
+    ]
+  },
+  {
+    "id": "201909_R1_NikonFe_Expired200_26",
+    "filename": "201909",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "chair",
+      "is",
+      "red",
+      "sitting",
+      "shirt"
+    ]
+  },
+  {
+    "id": "201909_R2_NikonFe_KodakColorplus200_02",
+    "filename": "201909",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "man",
+      "no",
+      "shirt"
+    ]
+  },
+  {
+    "id": "201909_R2_NikonFe_KodakColorplus200_07",
+    "filename": "201909",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "cigarette",
+      "holding",
+      "is",
+      "at",
+      "looking"
+    ]
+  },
+  {
+    "id": "201909_R2_NikonFe_KodakColorplus200_09",
+    "filename": "201909",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "group",
+      "people",
+      "standing",
+      "sidewalk"
+    ]
+  },
+  {
+    "id": "201909_R2_NikonFe_KodakColorplus200_10",
+    "filename": "201909",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "plastic",
+      "sheet",
+      "side",
+      "covered",
+      "road",
+      "car"
+    ]
+  },
+  {
+    "id": "201909_R2_NikonFe_KodakColorplus200_18",
+    "filename": "201909",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "at",
+      "eating",
+      "dog",
+      "sitting",
+      "hot"
+    ]
+  },
+  {
+    "id": "201909_R2_NikonFe_KodakColorplus200_20",
+    "filename": "201909",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "cigarette",
+      "holding",
+      "their",
+      "hand"
+    ]
+  },
+  {
+    "id": "201909_R2_NikonFe_KodakColorplus200_33",
+    "filename": "201909",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "white",
+      "man",
+      "shirt"
+    ]
+  },
+  {
+    "id": "201910_R1_NikonFe_KodakColorplus200_02",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "front",
+      "man",
+      "standing",
+      "store",
+      "book"
+    ]
+  },
+  {
+    "id": "201910_R1_NikonFe_KodakColorplus200_04",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "yellow",
+      "box",
+      "filled",
+      "food"
+    ]
+  },
+  {
+    "id": "201910_R1_NikonFe_KodakColorplus200_06",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "pile",
+      "fruit"
+    ]
+  },
+  {
+    "id": "201910_R1_NikonFe_KodakColorplus200_07",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "man",
+      "background",
+      "haircut",
+      "bald",
+      "flag"
+    ]
+  },
+  {
+    "id": "201910_R1_NikonFe_KodakColorplus200_08",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "american",
+      "front",
+      "man",
+      "large",
+      "flag",
+      "standing"
+    ]
+  },
+  {
+    "id": "201910_R2_NikonFe_KodakColorplus200_02",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "fire",
+      "hydrant",
+      "sidewalk",
+      "woods"
+    ]
+  },
+  {
+    "id": "201910_R2_NikonFe_KodakColorplus200_16",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "fan",
+      "holding",
+      "their",
+      "paper",
+      "hand"
+    ]
+  },
+  {
+    "id": "201910_R2_NikonFe_KodakColorplus200_29",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "is",
+      "hair",
+      "getting",
+      "done",
+      "her"
+    ]
+  },
+  {
+    "id": "201910_R2_NikonFe_KodakColorplus200_30",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "hair",
+      "long"
+    ]
+  },
+  {
+    "id": "201910_R2_NikonFe_KodakColorplus200_31",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "food",
+      "fork",
+      "piece",
+      "eating"
+    ]
+  },
+  {
+    "id": "201910_R2_NikonFe_KodakColorplus200_32",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "girl",
+      "bun",
+      "messy"
+    ]
+  },
+  {
+    "id": "201910_R2_NikonFe_KodakColorplus200_33",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "face",
+      "hands",
+      "her"
+    ]
+  },
+  {
+    "id": "201910_R3_NikonFe_KodakPortra400_09",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "is",
+      "mirror",
+      "selfie",
+      "taking"
+    ]
+  },
+  {
+    "id": "201910_R3_NikonFe_KodakPortra400_14",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "pink",
+      "wearing",
+      "hat",
+      "white",
+      "shirt"
+    ]
+  },
+  {
+    "id": "201910_R3_NikonFe_KodakPortra400_30",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "concrete",
+      "chairs",
+      "yellow",
+      "bunch",
+      "sitting",
+      "floor"
+    ]
+  },
+  {
+    "id": "201910_R4_NikonFE_KodakColorplus200_01",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "front",
+      "building",
+      "sitting",
+      "bench"
+    ]
+  },
+  {
+    "id": "201910_R4_NikonFE_KodakColorplus200_03",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "next",
+      "red",
+      "bike",
+      "parked",
+      "wall"
+    ]
+  },
+  {
+    "id": "201910_R4_NikonFE_KodakColorplus200_10",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "sidewalk",
+      "standing",
+      "pair",
+      "shoes"
+    ]
+  },
+  {
+    "id": "201910_R4_NikonFE_KodakColorplus200_13",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "standing",
+      "bathrobe",
+      "window"
+    ]
+  },
+  {
+    "id": "201910_R4_NikonFE_KodakColorplus200_15",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "his",
+      "man",
+      "hands",
+      "sidewalk",
+      "standing",
+      "pockets"
+    ]
+  },
+  {
+    "id": "201910_R4_NikonFE_KodakColorplus200_19",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "door",
+      "living",
+      "through",
+      "room",
+      "view"
+    ]
+  },
+  {
+    "id": "201910_R4_NikonFE_KodakColorplus200_24",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "fire",
+      "hydrant",
+      "dirty",
+      "area"
+    ]
+  },
+  {
+    "id": "201910_R4_NikonFE_KodakColorplus200_25",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "front",
+      "man",
+      "garbage",
+      "building",
+      "standing"
+    ]
+  },
+  {
+    "id": "201910_R4_NikonFE_KodakColorplus200_31",
+    "filename": "201910",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "man",
+      "street",
+      "city",
+      "down",
+      "walking"
+    ]
+  },
+  {
+    "id": "201911_R1_NikonFe_KodakColorplus200_02",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "tennis",
+      "court"
+    ]
+  },
+  {
+    "id": "201911_R1_NikonFe_KodakColorplus200_05",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "his",
+      "man",
+      "blue",
+      "nail",
+      "face",
+      "polish"
+    ]
+  },
+  {
+    "id": "201911_R1_NikonFe_KodakColorplus200_12",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "through",
+      "jungle",
+      "path"
+    ]
+  },
+  {
+    "id": "201911_R1_NikonFe_KodakColorplus200_24",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "holding",
+      "flowered",
+      "is",
+      "cell",
+      "shirt"
+    ]
+  },
+  {
+    "id": "201911_R1_NikonFe_KodakColorplus200_37",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "fr",
+      "grass",
+      "young",
+      "sitting",
+      "boy"
+    ]
+  },
+  {
+    "id": "201911_R3_NikonFE_KodakColorplus200_72",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "painted",
+      "body",
+      "robot",
+      "fake",
+      "like"
+    ]
+  },
+  {
+    "id": "201911_R3_NikonFE_KodakColorplus200_73",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "colorful",
+      "face",
+      "white",
+      "shirt"
+    ]
+  },
+  {
+    "id": "201911_R3_NikonFE_KodakColorplus200_74",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "tennis",
+      "standing",
+      "young",
+      "court",
+      "boy"
+    ]
+  },
+  {
+    "id": "201911_R3_NikonFE_KodakColorplus200_75",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "group",
+      "people",
+      "standing",
+      "field"
+    ]
+  },
+  {
+    "id": "201911_R3_NikonFE_KodakColorplus200_77",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "white",
+      "dress"
+    ]
+  },
+  {
+    "id": "201911_R3_NikonFE_KodakColorplus200_78",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "outfit",
+      "colorful",
+      "white",
+      "jacket"
+    ]
+  },
+  {
+    "id": "201911_R3_NikonFE_KodakColorplus200_79",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "glasses",
+      "balcony",
+      "man",
+      "mustache"
+    ]
+  },
+  {
+    "id": "201911_R3_NikonFE_KodakColorplus200_81",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "man",
+      "his",
+      "tie",
+      "around",
+      "neck",
+      "glasses"
+    ]
+  },
+  {
+    "id": "201911_R3_NikonFE_KodakColorplus200_83",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "camera",
+      "holding",
+      "hands",
+      "her"
+    ]
+  },
+  {
+    "id": "201911_R3_NikonFE_KodakColorplus200_89",
+    "filename": "201911",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "long",
+      "hair",
+      "white",
+      "shirt"
+    ]
+  },
+  {
+    "id": "201912_R1_NikonFe_KodakColorplus200_03",
+    "filename": "201912",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "is",
+      "bending",
+      "piece",
+      "down",
+      "paper"
+    ]
+  },
+  {
+    "id": "201912_R1_NikonFe_KodakColorplus200_05",
+    "filename": "201912",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "wall",
+      "painting",
+      "mural",
+      "man"
+    ]
+  },
+  {
+    "id": "201912_R1_NikonFe_KodakColorplus200_06",
+    "filename": "201912",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "like",
+      "face",
+      "painted"
+    ]
+  },
+  {
+    "id": "201912_R1_NikonFe_KodakColorplus200_08",
+    "filename": "201912",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "silver",
+      "purple",
+      "pants",
+      "jacket"
+    ]
+  },
+  {
+    "id": "201912_R1_NikonFe_KodakColorplus200_12",
+    "filename": "201912",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "tooth",
+      "blue",
+      "yellow",
+      "jean",
+      "brush",
+      "boy"
+    ]
+  },
+  {
+    "id": "201912_R1_NikonFe_KodakColorplus200_16",
+    "filename": "201912",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "mask",
+      "man",
+      "costume"
+    ]
+  },
+  {
+    "id": "201912_R1_NikonFe_KodakColorplus200_19",
+    "filename": "201912",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "ground",
+      "is",
+      "towel",
+      "laying"
+    ]
+  },
+  {
+    "id": "201912_R1_NikonFe_KodakColorplus200_21",
+    "filename": "201912",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "man",
+      "platform",
+      "cell",
+      "standing",
+      "train"
+    ]
+  },
+  {
+    "id": "201912_R1_NikonFe_KodakColorplus200_22",
+    "filename": "201912",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "road",
+      "middle",
+      "house",
+      "small"
+    ]
+  },
+  {
+    "id": "201912_R1_NikonFe_KodakColorplus200_27",
+    "filename": "201912",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2019",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "swimsuit",
+      "black",
+      "man"
+    ]
+  },
+  {
+    "id": "202001_R1_MinoltaX300_KodakGold200_14",
+    "filename": "202001",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "young",
+      "girl",
+      "hoodie"
+    ]
+  },
+  {
+    "id": "202001_R1_MinoltaX300_KodakGold200_15",
+    "filename": "202001",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "young",
+      "pink",
+      "girl",
+      "hoodie"
+    ]
+  },
+  {
+    "id": "202001_R1_MinoltaX300_KodakGold200_18",
+    "filename": "202001",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "face",
+      "man",
+      "his",
+      "holding",
+      "red",
+      "young"
+    ]
+  },
+  {
+    "id": "202001_R1_MinoltaX300_KodakGold200_19",
+    "filename": "202001",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "cigarette",
+      "smoking"
+    ]
+  },
+  {
+    "id": "202001_R1_MinoltaX300_KodakGold200_30",
+    "filename": "202001",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "it",
+      "flying",
+      "building",
+      "bird",
+      "over"
+    ]
+  },
+  {
+    "id": "202001_R2_CanonPrimaSuper115_Kodak200_05",
+    "filename": "202001",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "girl",
+      "sleeping",
+      "is",
+      "young",
+      "bed"
+    ]
+  },
+  {
+    "id": "202001_R2_CanonPrimaSuper115_Kodak200_12",
+    "filename": "202001",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "sitting",
+      "desk",
+      "laptop"
+    ]
+  },
+  {
+    "id": "202002_R1_MinoltaX300_KodakGold200_02",
+    "filename": "202002",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "pile",
+      "dirt",
+      "large"
+    ]
+  },
+  {
+    "id": "202002_R1_MinoltaX300_KodakGold200_12",
+    "filename": "202002",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "man",
+      "is",
+      "tree",
+      "picture",
+      "taking"
+    ]
+  },
+  {
+    "id": "202002_R2_MinoltaX300_KodakGold200_02",
+    "filename": "202002",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "man",
+      "laying",
+      "young",
+      "shirtless",
+      "bed"
+    ]
+  },
+  {
+    "id": "202002_R2_MinoltaX300_KodakGold200_03",
+    "filename": "202002",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "necklace",
+      "his",
+      "man",
+      "neck",
+      "young"
+    ]
+  },
+  {
+    "id": "202002_R2_MinoltaX300_KodakGold200_20",
+    "filename": "202002",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "curtains",
+      "white",
+      "window"
+    ]
+  },
+  {
+    "id": "202003_R1_MinoltaX300_KodakGold200_02",
+    "filename": "202003",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "closed",
+      "eyes",
+      "her"
+    ]
+  },
+  {
+    "id": "202003_R1_MinoltaX300_KodakGold200_07",
+    "filename": "202003",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "around",
+      "neck",
+      "scarf",
+      "her"
+    ]
+  },
+  {
+    "id": "202003_R1_MinoltaX300_KodakGold200_17",
+    "filename": "202003",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "girl",
+      "floor",
+      "laying",
+      "head",
+      "pillow",
+      "her"
+    ]
+  },
+  {
+    "id": "202004_R1_MinoltaX300_FujiProvia100F_19",
+    "filename": "202004",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "food",
+      "holding",
+      "dress",
+      "red",
+      "plate"
+    ]
+  },
+  {
+    "id": "202004_R1_MinoltaX300_FujiProvia100F_33",
+    "filename": "202004",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "grave",
+      "small",
+      "plant",
+      "out",
+      "growing"
+    ]
+  },
+  {
+    "id": "202004_R1_MinoltaX300_FujiProvia100F_35",
+    "filename": "202004",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "is",
+      "touching",
+      "flower",
+      "grass"
+    ]
+  },
+  {
+    "id": "202004_R1_MinoltaX300_FujiProvia100F_36",
+    "filename": "202004",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "hair",
+      "flower",
+      "her"
+    ]
+  },
+  {
+    "id": "202004_R1_MinoltaX300_FujiProvia100F_37",
+    "filename": "202004",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "next",
+      "chair",
+      "grass",
+      "cat",
+      "sitting"
+    ]
+  },
+  {
+    "id": "202004_R1_MinoltaX300_FujiProvia100F_39",
+    "filename": "202004",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "chair",
+      "near",
+      "grass",
+      "cat",
+      "sitting"
+    ]
+  },
+  {
+    "id": "202004_R1_MinoltaX300_FujiProvia100F_44",
+    "filename": "202004",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "drink",
+      "is",
+      "sandwich",
+      "eating"
+    ]
+  },
+  {
+    "id": "202004_R1_MinoltaX300_FujiProvia100F_47",
+    "filename": "202004",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "it",
+      "face",
+      "smiley",
+      "holding",
+      "an"
+    ]
+  },
+  {
+    "id": "202004_R1_MinoltaX300_FujiProvia100F_48",
+    "filename": "202004",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "apple",
+      "red",
+      "her",
+      "mouth"
+    ]
+  },
+  {
+    "id": "202004_R1_MinoltaX300_KodakColorplus200_18",
+    "filename": "202004",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "park",
+      "walking",
+      "dog"
+    ]
+  },
+  {
+    "id": "202008_R1_MinoltaX300_Expired_11",
+    "filename": "202008",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "young",
+      "bed",
+      "girl",
+      "laying"
+    ]
+  },
+  {
+    "id": "202008_R1_MinoltaX300_Expired_29",
+    "filename": "202008",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "couple",
+      "ground",
+      "laying"
+    ]
+  },
+  {
+    "id": "202008_R1_MinoltaX300_Expired_30",
+    "filename": "202008",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "ground",
+      "people",
+      "two",
+      "laying",
+      "shade"
+    ]
+  },
+  {
+    "id": "202009_R1_MinoltaX300_KodakPortra400_14",
+    "filename": "202009",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "into",
+      "pond",
+      "s",
+      "reaching",
+      "hand"
+    ]
+  },
+  {
+    "id": "202009_R2_MinoltaX700_Expired_06",
+    "filename": "202009",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "grass",
+      "laying"
+    ]
+  },
+  {
+    "id": "202009_R2_MinoltaX700_Expired_07",
+    "filename": "202009",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "skirt",
+      "tan",
+      "top",
+      "blue",
+      "tank"
+    ]
+  },
+  {
+    "id": "202009_R2_MinoltaX700_Expired_09",
+    "filename": "202009",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "ground",
+      "man",
+      "laying"
+    ]
+  },
+  {
+    "id": "202009_R2_MinoltaX700_Expired_12",
+    "filename": "202009",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2020",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "road",
+      "woods",
+      "dirt"
+    ]
+  },
+  {
+    "id": "202102_R1_MinoltaX300_KodakGold200_09",
+    "filename": "202102",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "it",
+      "small",
+      "piece",
+      "ice",
+      "rock"
+    ]
+  },
+  {
+    "id": "202104_R1_MinoltaX300_KodakGC400_03",
+    "filename": "202104",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "sky",
+      "reaching",
+      "up",
+      "hand"
+    ]
+  },
+  {
+    "id": "202107_R1_MinoltaX300_KodakGold20002427",
+    "filename": "202107",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "picture",
+      "herself",
+      "taking"
+    ]
+  },
+  {
+    "id": "202107_R1_MinoltaX300_KodakGold20002435",
+    "filename": "202107",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "man",
+      "next",
+      "bike",
+      "wall",
+      "sitting",
+      "brick"
+    ]
+  },
+  {
+    "id": "202107_R1_MinoltaX300_KodakGold20002440",
+    "filename": "202107",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "man",
+      "surface",
+      "sculpture",
+      "circular",
+      "metal"
+    ]
+  },
+  {
+    "id": "202107_R1_MinoltaX300_KodakGold20002443",
+    "filename": "202107",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "by",
+      "people",
+      "group",
+      "grass",
+      "water",
+      "sitting"
+    ]
+  },
+  {
+    "id": "202107_R1_MinoltaX300_KodakGold20002460",
+    "filename": "202107",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "holding",
+      "their",
+      "flowers",
+      "bunch",
+      "hand"
+    ]
+  },
+  {
+    "id": "202108_R1_CanonRebel2000_KodakGold200_08",
+    "filename": "202108",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "bunch",
+      "flowers",
+      "pool",
+      "floating"
+    ]
+  },
+  {
+    "id": "202108_R1_CanonRebel2000_KodakGold200_29",
+    "filename": "202108",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "man",
+      "playing",
+      "golf",
+      "course",
+      "green"
+    ]
+  },
+  {
+    "id": "202110_R1_CanonRebel2000_KodakGold200_02",
+    "filename": "202110",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "table",
+      "woods",
+      "chairs"
+    ]
+  },
+  {
+    "id": "202110_R1_CanonRebel2000_KodakGold200_03",
+    "filename": "202110",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "it",
+      "hole",
+      "woods",
+      "sitting",
+      "table"
+    ]
+  },
+  {
+    "id": "202112_R1_CanonRebel200_KodakGold200_09",
+    "filename": "202112",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "by",
+      "is",
+      "standing",
+      "woods",
+      "fence",
+      "deer"
+    ]
+  },
+  {
+    "id": "202112_R1_CanonRebel200_KodakGold200_22",
+    "filename": "202112",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "ground",
+      "top",
+      "strewn",
+      "broken",
+      "metal",
+      "table"
+    ]
+  },
+  {
+    "id": "202112_R1_CanonRebel200_KodakGold200_26",
+    "filename": "202112",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2021",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "middle",
+      "white",
+      "area",
+      "strewn",
+      "sitting",
+      "table"
+    ]
+  },
+  {
+    "id": "202203_R3_MinoltaX700_PorstChromeSuper100_13-2",
+    "filename": "202203",
+    "artist": "Thor Vermin",
+    "filmType": "Black & White",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "legs",
+      "crossed",
+      "sitting",
+      "bench",
+      "her"
+    ]
+  },
+  {
+    "id": "202204_R1_MinoltaX700_KodakFarbweltKlassik200_28",
+    "filename": "202204",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "it",
+      "food",
+      "small",
+      "bowl",
+      "piece",
+      "white"
+    ]
+  },
+  {
+    "id": "202205_R2_OlympusSuperzoom_FujiSensia100_12",
+    "filename": "202205",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "pot",
+      "next",
+      "is",
+      "laying",
+      "cat",
+      "table"
+    ]
+  },
+  {
+    "id": "202206_R1_OlympusTripXB_KodakColorplusExp_20",
+    "filename": "202206",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "next",
+      "building",
+      "field",
+      "flowers",
+      "bunch"
+    ]
+  },
+  {
+    "id": "202206_R3_OLSuperzoom_KodakColorplusExp_06",
+    "filename": "202206",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "holding",
+      "bag",
+      "dog",
+      "paper",
+      "hot"
+    ]
+  },
+  {
+    "id": "202207_R1_MinoltaX300_FujiSuperia200_02",
+    "filename": "202207",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "hair",
+      "bun",
+      "her"
+    ]
+  },
+  {
+    "id": "202207_R1_MinoltaX300_FujiSuperia200_25",
+    "filename": "202207",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "her",
+      "car",
+      "sitting",
+      "seat",
+      "hand"
+    ]
+  },
+  {
+    "id": "202207_R2_MinoltaX300_KodakGB200_09",
+    "filename": "202207",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "bunch",
+      "flowers",
+      "fence",
+      "garden"
+    ]
+  },
+  {
+    "id": "202207_R2_MinoltaX300_KodakGB200_37",
+    "filename": "202207",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "park",
+      "swinging",
+      "swing"
+    ]
+  },
+  {
+    "id": "202207_R4_FujiHalf_FujiSuperia200_19",
+    "filename": "202207",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "bird",
+      "branch",
+      "sitting",
+      "tree"
+    ]
+  },
+  {
+    "id": "202208_R1_MinoltaX300_KodakColorplus200_32",
+    "filename": "202208",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "floating",
+      "ring",
+      "pool",
+      "rubber"
+    ]
+  },
+  {
+    "id": "202208_R2_MinoltaX300_KodakGold20003243",
+    "filename": "202208",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "cigarette",
+      "holding",
+      "their",
+      "hand"
+    ]
+  },
+  {
+    "id": "202211_R1_MinoltaX300_IlfordDelta400_25",
+    "filename": "202211",
+    "artist": "Thor Vermin",
+    "filmType": "Black & White",
+    "year": "2022",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "helmet",
+      "robot",
+      "up",
+      "close"
+    ]
+  },
+  {
+    "id": "202411_R4_NikonFe_kodakColorplus200_39",
+    "filename": "202411",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2024",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "gray",
+      "background",
+      "city",
+      "shirt"
+    ]
+  },
+  {
+    "id": "202411_R4_NikonFe_kodakColorplus200_40",
+    "filename": "202411",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2024",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "red",
+      "hair",
+      "blonde",
+      "shirt"
+    ]
+  },
+  {
+    "id": "202411_R4_NikonFe_kodakColorplus200_41",
+    "filename": "202411",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2024",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "red",
+      "hair",
+      "blonde",
+      "shirt"
+    ]
+  },
+  {
+    "id": "202411_R4_NikonFe_kodakColorplus200_46",
+    "filename": "202411",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2024",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "jumping",
+      "is",
+      "air",
+      "bench"
+    ]
+  },
+  {
+    "id": "202411_R4_NikonFe_kodakColorplus200_47",
+    "filename": "202411",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2024",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "suit",
+      "man",
+      "is",
+      "black",
+      "standing",
+      "bench"
+    ]
+  },
+  {
+    "id": "202411_R4_NikonFe_kodakColorplus200_48",
+    "filename": "202411",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2024",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "people",
+      "group",
+      "down",
+      "walking",
+      "path"
+    ]
+  },
+  {
+    "id": "202411_R4_NikonFe_kodakColorplus200_50",
+    "filename": "202411",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2024",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "picture",
+      "herself",
+      "taking"
+    ]
+  },
+  {
+    "id": "202411_R4_NikonFe_kodakColorplus200_53",
+    "filename": "202411",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2024",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "ground",
+      "laying"
+    ]
+  },
+  {
+    "id": "202411_R4_NikonFe_kodakColorplus200_54",
+    "filename": "202411",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2024",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "sitting",
+      "ground",
+      "man"
+    ]
+  },
+  {
+    "id": "202411_R4_NikonFe_kodakColorplus200_55",
+    "filename": "202411",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2024",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "woman",
+      "is",
+      "hair",
+      "getting",
+      "done",
+      "her"
+    ]
+  },
+  {
+    "id": "202411_R4_NikonFe_kodakColorplus200_65",
+    "filename": "202411",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2024",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "tags": [
+      "person",
+      "night",
+      "dark",
+      "at",
+      "alley",
+      "down"
     ]
   }
 ]
