@@ -6,7 +6,12 @@
     "filmType": "Black & White",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "tags": [ "interior", "portrait", "juliet" ]
+    "location": "Antwerp",
+    "tags": [
+      "interior",
+      "portrait",
+      "juliet"
+    ]
   },
   {
     "id": "202303_R1_MinoltaX300_KodakColorplus20003189",
@@ -15,6 +20,7 @@
     "filmType": "Color",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Veerle-Heide",
     "tags": [
       "room",
       "rug",
@@ -28,6 +34,7 @@
     "filmType": "Color",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Paris",
     "tags": [
       "lamp",
       "project",
@@ -42,6 +49,7 @@
     "filmType": "Black & White",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Wilrijk",
     "tags": [
       "leg",
       "knee",
@@ -56,6 +64,7 @@
     "filmType": "Black & White",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Wilrijk",
     "tags": [
       "sitting",
       "ground",
@@ -70,6 +79,7 @@
     "filmType": "Color",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Veerle-Heide",
     "tags": [
       "sunny",
       "wooden",
@@ -83,6 +93,7 @@
     "filmType": "Color",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Schoten",
     "tags": [
       "mirror",
       "reflection",
@@ -97,6 +108,7 @@
     "filmType": "Color",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Schoten",
     "tags": [
       "self portrait",
       "portrait",
@@ -111,6 +123,7 @@
     "filmType": "Color",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "N/A",
     "tags": [
       "katinka",
       "portrait",
@@ -124,6 +137,7 @@
     "filmType": "Color",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Herbeumont",
     "tags": [
       "field",
       "standing",
@@ -138,6 +152,7 @@
     "filmType": "Color",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Herbeumont",
     "tags": [
       "tiny",
       "insect",
@@ -154,6 +169,7 @@
     "filmType": "Color",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Herbeumont",
     "tags": [
       "forest",
       "hair",
@@ -168,6 +184,7 @@
     "filmType": "Color",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Herbeumont",
     "tags": [
       "katinka",
       "portrait",
@@ -182,6 +199,7 @@
     "filmType": "Color",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Herbeumont",
     "tags": [
       "piece",
       "fruit",
@@ -196,6 +214,7 @@
     "filmType": "Black & White",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Herbeumont",
     "tags": [
       "tree",
       "light"
@@ -208,6 +227,7 @@
     "filmType": "Black & White",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Herbeumont",
     "tags": [
       "grass",
       "blanket",
@@ -222,6 +242,7 @@
     "filmType": "Color",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Schoten",
     "tags": [
       "bed",
       "laying",
@@ -235,6 +256,7 @@
     "filmType": "Color",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Herbeumont",
     "tags": [
       "self portrait",
       "mirror",
@@ -249,6 +271,7 @@
     "filmType": "Black & White",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Borgerhout",
     "tags": [
       "camera",
       "background",
@@ -262,9 +285,11 @@
     "filmType": "Color",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Schoten",
     "tags": [
       "sink",
-      "water"
+      "water",
+      "dirty"
     ]
   },
   {
@@ -274,6 +299,7 @@
     "filmType": "Black & White",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Schoten",
     "tags": [
       "light",
       "bread",
@@ -288,6 +314,7 @@
     "filmType": "Black & White",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Schoten",
     "tags": [
       "light",
       "bread",
@@ -302,6 +329,7 @@
     "filmType": "Color",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Schoten",
     "tags": [
       "window",
       "room",
@@ -316,6 +344,7 @@
     "filmType": "Color",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Schoten",
     "tags": [
       "sheep",
       "tree",
@@ -330,6 +359,7 @@
     "filmType": "Color",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Schoten",
     "tags": [
       "table",
       "white",
@@ -344,6 +374,7 @@
     "filmType": "Color",
     "year": "2023",
     "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Borgerhout",
     "tags": [
       "self portrait",
       "kitchen",
@@ -351,5 +382,4 @@
       "mirror"
     ]
   }
-
 ]

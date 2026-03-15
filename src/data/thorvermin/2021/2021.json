@@ -6,11 +6,8 @@
     "filmType": "Color",
     "year": "2021",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "location": "",
+    "location": "Boom",
     "tags": [
-      "it",
-      "small",
-      "piece",
       "ice",
       "rock"
     ]
@@ -22,7 +19,7 @@
     "filmType": "Color",
     "year": "2021",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "location": "",
+    "location": "N/A",
     "tags": [
       "sky",
       "reaching",
@@ -37,12 +34,11 @@
     "filmType": "Color",
     "year": "2021",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "location": "",
+    "location": "Borgerhout",
     "tags": [
-      "woman",
-      "picture",
-      "herself",
-      "taking"
+      "self-portrait",
+      "mirror",
+      "tattoo"
     ]
   },
   {
@@ -52,10 +48,8 @@
     "filmType": "Color",
     "year": "2021",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "location": "",
+    "location": "Borgerhout",
     "tags": [
-      "man",
-      "next",
       "bike",
       "wall",
       "sitting",
@@ -69,12 +63,11 @@
     "filmType": "Color",
     "year": "2021",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "location": "",
+    "location": "N/A",
     "tags": [
-      "man",
       "surface",
       "sculpture",
-      "circular",
+      "jesus",
       "metal"
     ]
   },
@@ -85,9 +78,8 @@
     "filmType": "Color",
     "year": "2021",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "location": "",
+    "location": "N/A",
     "tags": [
-      "by",
       "people",
       "group",
       "grass",
@@ -102,13 +94,13 @@
     "filmType": "Color",
     "year": "2021",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "location": "",
+    "location": "Herbeumont",
     "tags": [
       "person",
       "holding",
       "their",
-      "flowers",
-      "bunch",
+      "flower",
+      "project",
       "hand"
     ]
   },
@@ -119,12 +111,10 @@
     "filmType": "Color",
     "year": "2021",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "location": "",
+    "location": "N/A",
     "tags": [
-      "bunch",
-      "flowers",
-      "pool",
-      "floating"
+      "flower",
+      "project"
     ]
   },
   {
@@ -134,13 +124,12 @@
     "filmType": "Color",
     "year": "2021",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "location": "",
+    "location": "Wilrijk",
     "tags": [
-      "man",
       "playing",
       "golf",
-      "course",
-      "green"
+      "flower",
+      "project"
     ]
   },
   {
@@ -150,7 +139,7 @@
     "filmType": "Color",
     "year": "2021",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "location": "",
+    "location": "Veerle-Heide",
     "tags": [
       "table",
       "woods",
@@ -164,12 +153,11 @@
     "filmType": "Color",
     "year": "2021",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "location": "",
+    "location": "Veerle-Heide",
     "tags": [
-      "it",
-      "hole",
+      "garden",
+      "project",
       "woods",
-      "sitting",
       "table"
     ]
   },
@@ -180,14 +168,11 @@
     "filmType": "Color",
     "year": "2021",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "location": "",
+    "location": "Veerle-Heide",
     "tags": [
-      "by",
-      "is",
-      "standing",
       "woods",
       "fence",
-      "deer"
+      "garden"
     ]
   },
   {
@@ -197,13 +182,11 @@
     "filmType": "Color",
     "year": "2021",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "location": "",
+    "location": "Veerle-Heide",
     "tags": [
-      "ground",
-      "top",
-      "strewn",
-      "broken",
-      "metal",
+      "garden",
+      "project",
+      "woods",
       "table"
     ]
   },
@@ -214,13 +197,11 @@
     "filmType": "Color",
     "year": "2021",
     "scanningEquipment": "Nikon Coolscan 5000",
-    "location": "",
+    "location": "Veerle-Heide",
     "tags": [
-      "middle",
-      "white",
-      "area",
-      "strewn",
-      "sitting",
+      "garden",
+      "project",
+      "woods",
       "table"
     ]
   }
