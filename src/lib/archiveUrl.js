@@ -10,8 +10,9 @@ export function readArchiveStateFromUrl(search) {
         year: sp.get("year") || "All",
         film: sp.get("film") || "All",
         scanner: sp.get("scanner") || "All",
-        authors: sp.getAll("author"), // multi
-        tags: sp.getAll("tag"),       // multi
+        location: sp.get("location") || "All",
+        authors: sp.getAll("author"),
+        tags: sp.getAll("tag"),
         q: sp.get("q") || "",
         view: sp.get("view") || "grid",
     };
@@ -22,6 +23,7 @@ export function buildUrlSearch({
     year,
     film,
     scanner,
+    location,
     authors,
     tags,
     q,
@@ -37,6 +39,7 @@ export function buildUrlSearch({
         if (year && year !== "All") sp.set("year", year);
         if (film && film !== "All") sp.set("film", film);
         if (scanner && scanner !== "All") sp.set("scanner", scanner);
+        if (location && location !== "All") sp.set("location", location);
 
         (authors || []).forEach(a => a && sp.append("author", a));
         (tags || []).forEach(t => t && sp.append("tag", t));

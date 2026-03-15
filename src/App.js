@@ -6,7 +6,17 @@ import {
     useDeferredValue
 } from "react";
 
-import imageData from "./data/images.json";
+// OLD
+// import imageData from "./data/images.json";
+
+// NEW
+import imageData2019 from "./data/thorvermin/2019/2019.json";
+import imageData2020 from "./data/thorvermin/2020/2020.json";
+import imageData2021 from "./data/thorvermin/2021/2021.json";
+import imageData2022 from "./data/thorvermin/2022/2022.json";
+import imageData2023 from "./data/thorvermin/2023/2023.json";
+import imageData2024 from "./data/thorvermin/2024/2024.json";
+import imageData2025 from "./data/thorvermin/2025/2025.json";
 import COLLECTIONS from "./data/collections";
 import BLOG_POSTS from "./posts";
 import About from "./About";
@@ -18,6 +28,16 @@ import { readArchiveStateFromUrl, buildUrlSearch } from "./lib/archiveUrl";
    DATA
 ───────────────────────────────────────────── */
 
+const imageData = [
+    ...imageData2019,
+    ...imageData2020,
+    ...imageData2021,
+    ...imageData2022,
+    ...imageData2023,
+    ...imageData2024,
+    ...imageData2025
+];
+
 const EXTRA = imageData.map(p => ({
     id: p.id,
     name: p.filename,
@@ -25,6 +45,7 @@ const EXTRA = imageData.map(p => ({
     film: p.filmType,
     scanner: p.scanningEquipment,
     author: p.artist,
+    location: (p.location || "").trim(),
     tags: p.tags || [],
     ratio: "3/2",
     tone: "mid",
@@ -36,7 +57,7 @@ const EXTRA = imageData.map(p => ({
 
 const ALL_ARCHIVE = EXTRA;
 
-const PAGE_SIZE = 18;
+const PAGE_SIZE = 36;
 
 const uniq = k => [
     "All",
@@ -47,6 +68,7 @@ const YEARS = uniq("year");
 const FILMS = uniq("film");
 const SCANNERS = uniq("scanner");
 const AUTHORS = uniq("author");
+const LOCATIONS = uniq("location");
 const TAGS = [
     "All",
     ...Array.from(new Set(ALL_ARCHIVE.flatMap(i => i.tags || [])))
@@ -115,6 +137,7 @@ function Lightbox({ items, index, onClose, setIndex }) {
         ["Year", img.year],
         ["Film", img.film],
         ["Scanner", img.scanner],
+        img.location && ["Location", img.location],
         ["Author", img.author],
         Array.isArray(img.tags) && img.tags.length > 0 && ["Tags", img.tags.join(", ")],
         img.collectionTitle && ["Collection", img.collectionTitle]
@@ -604,6 +627,7 @@ export default function App() {
     const [fYear, setFYear] = useState("All");
     const [fFilm, setFFilm] = useState("All");
     const [fScanner, setFScanner] = useState("All");
+    const [fLocation, setFLocation] = useState("All");
     const [fAuthors, setFAuthors] = useState([]);
     const [fTags, setFTags] = useState([]);
     const [search, setSearch] = useState("");
@@ -629,6 +653,7 @@ export default function App() {
                 setFYear(s.year);
                 setFFilm(s.film);
                 setFScanner(s.scanner);
+                setFLocation(s.location);
                 setFAuthors(s.authors);
                 setFTags(s.tags);
                 setSearch(s.q);
@@ -653,6 +678,7 @@ export default function App() {
             year: fYear,
             film: fFilm,
             scanner: fScanner,
+            location: fLocation,
             authors: fAuthors,
             tags: fTags,
             q: search,
@@ -663,7 +689,7 @@ export default function App() {
         const curUrl = window.location.pathname + window.location.search;
 
         if (newUrl !== curUrl) window.history.replaceState(null, "", newUrl);
-    }, [page.name, fYear, fFilm, fScanner, fAuthors, fTags, search, viewMode]);
+    }, [page.name, fYear, fFilm, fScanner, fLocation, fAuthors, fTags, search, viewMode]);
 
     const navTo = name => {
         setPage({ name });
@@ -675,6 +701,7 @@ export default function App() {
                 year: fYear,
                 film: fFilm,
                 scanner: fScanner,
+                location: fLocation,
                 authors: fAuthors,
                 tags: fTags,
                 q: search,
@@ -690,6 +717,7 @@ export default function App() {
         setFYear(ui.year);
         setFFilm(ui.film);
         setFScanner(ui.scanner);
+        setFLocation(ui.location);
         setFAuthors(ui.authors);
         setFTags(ui.tags);
         setSearch("");
@@ -701,6 +729,7 @@ export default function App() {
             year: ui.year,
             film: ui.film,
             scanner: ui.scanner,
+            location: ui.location,
             authors: ui.authors,
             tags: ui.tags,
             q: "",
@@ -714,6 +743,7 @@ export default function App() {
         setFYear("All");
         setFFilm("All");
         setFScanner("All");
+        setFLocation("All");
         setFAuthors([]);
         setFTags([]);
         setSearch("");
@@ -723,6 +753,7 @@ export default function App() {
         fYear !== "All" ||
         fFilm !== "All" ||
         fScanner !== "All" ||
+        fLocation !== "All" ||
         fAuthors.length > 0 ||
         fTags.length > 0 ||
         search;
@@ -735,6 +766,7 @@ export default function App() {
                 year: fYear,
                 film: fFilm,
                 scanner: fScanner,
+                location: fLocation,
                 authors: fAuthors,
                 tags: fTags
             });
@@ -747,10 +779,11 @@ export default function App() {
                 (img.film && img.film.toLowerCase().includes(q)) ||
                 (img.scanner && img.scanner.toLowerCase().includes(q)) ||
                 (img.author && img.author.toLowerCase().includes(q)) ||
+                (img.location && img.location.toLowerCase().includes(q)) ||
                 (img.tags || []).some(tag => tag.toLowerCase().includes(q))
             );
         });
-    }, [fYear, fFilm, fScanner, fAuthors, fTags, deferredSearch]);
+    }, [fYear, fFilm, fScanner, fLocation, fAuthors, fTags, deferredSearch]);
 
     return (
         <>
@@ -962,6 +995,8 @@ export default function App() {
                         setFFilm={setFFilm}
                         fScanner={fScanner}
                         setFScanner={setFScanner}
+                        fLocation={fLocation}
+                        setFLocation={setFLocation}
                         fAuthors={fAuthors}
                         setFAuthors={setFAuthors}
                         fTags={fTags}
@@ -1551,6 +1586,8 @@ function Archive({
     setFFilm,
     fScanner,
     setFScanner,
+    fLocation,
+    setFLocation,
     fAuthors,
     setFAuthors,
     fTags,
@@ -1565,7 +1602,7 @@ function Archive({
 
     useEffect(() => {
         setVisibleCount(PAGE_SIZE);
-    }, [fYear, fFilm, fScanner, fAuthors, fTags, search]);
+    }, [fYear, fFilm, fScanner, fLocation, fAuthors, fTags, search]);
 
     const visibleItems = filtered.slice(0, visibleCount);
 
@@ -1654,7 +1691,7 @@ function Archive({
                 <span style={{ color: "var(--gray)", fontSize: "0.9rem" }}>⌕</span>
                 <input
                     type="text"
-                    placeholder="Search title, year, film, scanner, author, or tags…"
+                    placeholder="Search title, year, film, scanner, author, location, or tags…"
                     value={search}
                     onChange={e => setSearch(e.target.value)}
                     style={{
@@ -1697,6 +1734,7 @@ function Archive({
                 <Dropdown label="Year" options={YEARS} value={fYear} onChange={setFYear} />
                 <Dropdown label="Film Stock" options={FILMS} value={fFilm} onChange={setFFilm} />
                 <Dropdown label="Scanner" options={SCANNERS} value={fScanner} onChange={setFScanner} />
+                <Dropdown label="Location" options={LOCATIONS} value={fLocation} onChange={setFLocation} />
 
                 <MultiDropdown
                     label="Author"

@@ -1,0 +1,814 @@
+[
+  {
+    "id": "202501_R1_OlympusMju1_FujiSuperia200_042-2",
+    "filename": "202501",
+    "artist": "Thor Vermin",
+    "filmType": "Black & White",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Borgerhout",
+    "tags": [
+      "cat",
+      "shower",
+      "bo"
+    ]
+  },
+  {
+    "id": "202501_R1_OlympusMju1_FujiSuperia200_043",
+    "filename": "202501",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Borgerhout",
+    "tags": [
+      "shower"
+    ]
+  },
+  {
+    "id": "202501_R2_OlympusMju1_KodakUltramax400_Coolscan5000_01",
+    "filename": "202501",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Borgerhout",
+    "tags": [
+      "food",
+      "soccer",
+      "project"
+    ]
+  },
+  {
+    "id": "202501_R2_OlympusMju1_KodakUltramax400_Coolscan5000_33-2",
+    "filename": "202501",
+    "artist": "Thor Vermin",
+    "filmType": "Black & White",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Boom",
+    "tags": [
+      "portrait",
+      "self-portrait",
+      "soccer",
+      "project"
+    ]
+  },
+  {
+    "id": "202501_R3_OlympusMju1_Fuji200_Coolscan5000_03",
+    "filename": "202501",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Boom",
+    "tags": [
+      "portrait",
+      "self-portrait",
+      "mirror"
+    ]
+  },
+  {
+    "id": "202502_R1_NikonFE_KodakGold200_Coolscan5000_06-2",
+    "filename": "202502",
+    "artist": "Thor Vermin",
+    "filmType": "Black & White",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Antwerp",
+    "tags": [
+      "friends",
+      "pub",
+      "beer"
+    ]
+  },
+  {
+    "id": "202502_R1_NikonFE_KodakGold200_Coolscan5000_13",
+    "filename": "202502",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Borgerhout",
+    "tags": [
+      "portrait",
+      "self-portrait",
+      "flower",
+      "project"
+    ]
+  },
+  {
+    "id": "202502_R1_NikonFE_KodakGold200_Coolscan5000_29-2",
+    "filename": "202502",
+    "artist": "Thor Vermin",
+    "filmType": "Black & White",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Averbode",
+    "tags": [
+      "christ",
+      "damaged"
+    ]
+  },
+  {
+    "id": "202502_R2_NikonFE_RolleiRetro80S_Coolscan5000_13",
+    "filename": "202502",
+    "artist": "Thor Vermin",
+    "filmType": "Black & White",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Borgerhout",
+    "tags": [
+      "lamp",
+      "project",
+      "fire"
+    ]
+  },
+  {
+    "id": "202502_R2_NikonFE_RolleiRetro80S_Coolscan5000_17",
+    "filename": "202502",
+    "artist": "Thor Vermin",
+    "filmType": "Black & White",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Borgerhout",
+    "tags": [
+      "portrait",
+      "self-portrait"
+    ]
+  },
+  {
+    "id": "202502_R3_NikonFE_Portra400_Coolscan5000_18",
+    "filename": "202502",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "N/A",
+    "tags": [
+      "soccer",
+      "project",
+      "8",
+      "cable"
+    ]
+  },
+  {
+    "id": "202503_R1_NikonF2_FujiNPC160_Coolscan5000_09",
+    "filename": "202503",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Gent",
+    "tags": [
+      "portrait",
+      "nan"
+    ]
+  },
+  {
+    "id": "202503_R1_NikonF2_FujiNPC160_Coolscan5000_37-2",
+    "filename": "202503",
+    "artist": "Thor Vermin",
+    "filmType": "Black & White",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "N/A",
+    "tags": [
+      "portrait",
+      "nan",
+      "train"
+    ]
+  },
+  {
+    "id": "202503_R3_NikonF2__KodakGold200_Coolscan5000_27",
+    "filename": "202503",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Kiel",
+    "tags": [
+      "soccer",
+      "project",
+      "purple",
+      "beerschot",
+      "damaged"
+    ]
+  },
+  {
+    "id": "202504_R1_NikonF2_FujiNPC160_1",
+    "filename": "202504",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Antwerp",
+    "tags": [
+      "flower",
+      "project",
+      "ercola"
+    ]
+  },
+  {
+    "id": "202504_R1_NikonF2_FujiNPC160_2",
+    "filename": "202504",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Antwerp",
+    "tags": [
+      "ercola",
+      "studio",
+      "workshop"
+    ]
+  },
+  {
+    "id": "202504_R1_NikonF2_FujiNPC160_3",
+    "filename": "202504",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Antwerp",
+    "tags": [
+      "ercola",
+      "portrait",
+      "mirror",
+      "self-portrait"
+    ]
+  },
+  {
+    "id": "202504_R1_NikonF2_FujiNPC160_4",
+    "filename": "202504",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Antwerp",
+    "tags": [
+      "ercola",
+      "workspace",
+      "chair"
+    ]
+  },
+  {
+    "id": "202504_R1_NikonF2_FujiNPC160_8",
+    "filename": "202504",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Antwerp",
+    "tags": [
+      "ercola",
+      "stairs",
+      "moody",
+      "dark",
+      "lamp"
+    ]
+  },
+  {
+    "id": "202504_R1_NikonFM_FujiC200_Coolscan5000_01",
+    "filename": "202504",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Borgerhout",
+    "tags": [
+      "flower",
+      "project",
+      "garden"
+    ]
+  },
+  {
+    "id": "202504_R1_NikonFM_FujiC200_Coolscan5000_10",
+    "filename": "202504",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Brussels",
+    "tags": [
+      "table",
+      "circle",
+      "pub",
+      "beer",
+      "summer"
+    ]
+  },
+  {
+    "id": "202504_R2_NikonFM_KodakGold200_Coolscan5000_07",
+    "filename": "202504",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Borgerhout",
+    "tags": [
+      "portrait",
+      "katinka",
+      "cat",
+      "cece"
+    ]
+  },
+  {
+    "id": "202505_R1_NikonFM_Gold200_Coolscan5000_23",
+    "filename": "202505",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Borgerhout",
+    "tags": [
+      "lamp",
+      "project",
+      "ceiling"
+    ]
+  },
+  {
+    "id": "202505_R1_NikonFM_KodakUltramax400_03",
+    "filename": "202505",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Boom",
+    "tags": [
+      "flower",
+      "project"
+    ]
+  },
+  {
+    "id": "202506_R1_NikonFM_KodakUltraMax400_15",
+    "filename": "202506",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Veerle-Heide",
+    "tags": [
+      "lamp",
+      "yellow",
+      "abstract",
+      "project"
+    ]
+  },
+  {
+    "id": "202506_R1_NikonFM_KodakUltraMax400_16",
+    "filename": "202506",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Veerle-Heide",
+    "tags": [
+      "table",
+      "garden",
+      "metal",
+      "circle",
+      "project"
+    ]
+  },
+  {
+    "id": "202506_R2_NikonFM_KodakUltramax400_15",
+    "filename": "202506",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Veerle-Heide",
+    "tags": [
+      "bicycle",
+      "basket",
+      "road",
+      "field"
+    ]
+  },
+  {
+    "id": "202506_R2_NikonFM_KodakUltramax400_29",
+    "filename": "202506",
+    "artist": "Thor Vermin",
+    "filmType": "Black & White",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Veerle-Heide",
+    "tags": [
+      "interior",
+      "bookshelf",
+      "doorway"
+    ]
+  },
+  {
+    "id": "202506_R3_NikonFM_KodakUltramax_10",
+    "filename": "202506",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Veerle-Heide",
+    "tags": [
+      "roadside",
+      "flower",
+      "memorial",
+      "cross",
+      "project"
+    ]
+  },
+  {
+    "id": "202506_R3_NikonFM_KodakUltramax_16",
+    "filename": "202506",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Veerle-Heide",
+    "tags": [
+      "flower",
+      "soil",
+      "garden",
+      "project"
+    ]
+  },
+  {
+    "id": "202506_R4_NikonFM_KodakUltramax400_18",
+    "filename": "202506",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Veerle-Heide",
+    "tags": [
+      "interior",
+      "doorway",
+      "bedroom",
+      "sofa",
+      "portrait",
+      "self-portrait"
+    ]
+  },
+  {
+    "id": "202506_R4_NikonFM_KodakUltramax400_33",
+    "filename": "202506",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Veerle-Heide",
+    "tags": [
+      "table",
+      "garden",
+      "tree",
+      "shadow",
+      "project"
+    ]
+  },
+  {
+    "id": "202506_R5_NikonFM_FujiNPC160_02",
+    "filename": "202506",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Borgerhout",
+    "tags": [
+      "fairground",
+      "neon",
+      "arcade",
+      "night"
+    ]
+  },
+  {
+    "id": "202506_R5_NikonFM_FujiNPC160_20",
+    "filename": "202506",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Veerle-Heide",
+    "tags": [
+      "path",
+      "meadow",
+      "trees",
+      "landscape",
+      "flower",
+      "project"
+    ]
+  },
+  {
+    "id": "202506_Temp_R5_16",
+    "filename": "202506",
+    "artist": "Thor Vermin",
+    "filmType": "Black & White",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Boom",
+    "tags": [
+      "bicycle",
+      "guardrail",
+      "road",
+      "broken",
+      "project"
+    ]
+  },
+  {
+    "id": "202507_R2_FujiC200_14",
+    "filename": "202507",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "N/A",
+    "tags": [
+      "interior",
+      "chairs",
+      "lamp",
+      "clutter"
+    ]
+  },
+  {
+    "id": "202507_R2_FujiC200_15",
+    "filename": "202507",
+    "artist": "Thor Vermin",
+    "filmType": "Black & White",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "N/A",
+    "tags": [
+      "sculpture",
+      "interior"
+    ]
+  },
+  {
+    "id": "202507_R3_FujiNPC160_02",
+    "filename": "202507",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Linkeroever",
+    "tags": [
+      "kitchen",
+      "red",
+      "lamp",
+      "portrait"
+    ]
+  },
+  {
+    "id": "202508_R1_KodakGold200_05",
+    "filename": "202508",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Herbeumont",
+    "tags": [
+      "sofa",
+      "outdoors",
+      "stone-wall"
+    ]
+  },
+  {
+    "id": "202508_R1_KodakGold200_18",
+    "filename": "202508",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Herbeumont",
+    "tags": [
+      "portrait",
+      "field",
+      "braid"
+    ]
+  },
+  {
+    "id": "202508_R2_KodakGold200_04",
+    "filename": "202508",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Herbeumont",
+    "tags": [
+      "table",
+      "food",
+      "dining",
+      "sunlight",
+      "flower",
+      "project"
+    ]
+  },
+  {
+    "id": "202508_R2_KodakGold200_12",
+    "filename": "202508",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Herbeumont",
+    "tags": [
+      "portrait",
+      "swimsuit",
+      "river",
+      "rocks",
+      "flower",
+      "project"
+    ]
+  },
+  {
+    "id": "202505_R1_NikonFM_KodakUltramax400_25",
+    "filename": "202505",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Antwerp",
+    "tags": [
+      "cable",
+      "floor",
+      "dust",
+      "industrial",
+      "soccer",
+      "project"
+    ]
+  },
+  {
+    "id": "202505_R1_NikonFM_KodakUltramax400_26",
+    "filename": "202505",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Antwerp",
+    "tags": [
+      "electrical-box",
+      "cables",
+      "night",
+      "industrial",
+      "soccer",
+      "project"
+    ]
+  },
+  {
+    "id": "202505_R2_NikonFM_KodakGold200_01",
+    "filename": "202505",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "N/A",
+    "tags": [
+      "trailer",
+      "trees",
+      "gravel",
+      "summer"
+    ]
+  },
+  {
+    "id": "202505_R2_NikonFM_KodakGold200_09",
+    "filename": "202505",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Antwerp",
+    "tags": [
+      "stage",
+      "metal",
+      "railing",
+      "plate",
+      "soccer",
+      "project",
+      "frui"
+    ]
+  },
+  {
+    "id": "202505_R2_NikonFM_KodakGold200_12",
+    "filename": "202505",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Antwerp",
+    "tags": [
+      "portrait",
+      "asphalt",
+      "lying",
+      "street",
+      "soccer",
+      "project"
+    ]
+  },
+  {
+    "id": "202505_R2_NikonFM_KodakGold200_17 1",
+    "filename": "202505",
+    "artist": "Thor Vermin",
+    "filmType": "Black & White",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Gent",
+    "tags": [
+      "bicycle",
+      "shadow",
+      "pavement",
+      "wheel",
+      "broken",
+      "project"
+    ]
+  },
+  {
+    "id": "202505_R2_NikonFM_KodakGold200_33",
+    "filename": "202505",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Boom",
+    "tags": [
+      "table",
+      "tea",
+      "hands",
+      "snacks",
+      "flower",
+      "project"
+    ]
+  },
+  {
+    "id": "202505_R2_NikonFM_KodakGold200_35",
+    "filename": "202505",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Boom",
+    "tags": [
+      "table",
+      "courtyard",
+      "summer",
+      "portrait"
+    ]
+  },
+  {
+    "id": "202506_R1_NikonFM_KodakUltraMax400_03",
+    "filename": "202506",
+    "artist": "Thor Vermin",
+    "filmType": "Black & White",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Veerle-Heide",
+    "tags": [
+      "leaves",
+      "foliage",
+      "bokeh"
+    ]
+  },
+  {
+    "id": "202506_R1_NikonFM_KodakUltramax400_06",
+    "filename": "202506",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Veerle-Heide",
+    "tags": [
+      "table",
+      "grass",
+      "circle",
+      "project"
+    ]
+  },
+  {
+    "id": "202506_R1_NikonFM_KodakUltramax400_07",
+    "filename": "202506",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Veerle-Heide",
+    "tags": [
+      "window",
+      "flower",
+      "brick",
+      "yellow",
+      "project"
+    ]
+  },
+  {
+    "id": "202506_R1_NikonFM_KodakUltramax400_09",
+    "filename": "202506",
+    "artist": "Thor Vermin",
+    "filmType": "Color",
+    "year": "2025",
+    "scanningEquipment": "Nikon Coolscan 5000",
+    "location": "Veerle-Heide",
+    "tags": [
+      "lamp",
+      "armchairs",
+      "interior",
+      "warm-light",
+      "project"
+    ]
+  }
+]
